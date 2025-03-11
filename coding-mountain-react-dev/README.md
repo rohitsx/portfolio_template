@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# React Shop Product Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application built with TypeScript that displays a list of products and detailed product information fetched from the live API at [dummyjson.com](https://dummyjson.com/products). The project demonstrates how to integrate a live API, implement routing, and use TypeScript for type safety.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+- **Product List:** Displays a list of products fetched from the dummyjson API.
+- **Product Details:** Shows detailed information for a selected product.
+- **Layout:** The app uses a two-pane design:
+  - **Left Side:** Displays product details (or a placeholder message if no product is selected).
+  - **Right Side:** Shows the product list.
+- **Routing:** Uses `react-router-dom` (v6) for navigation.
+- **Styling:** Basic CSS is included. Feel free to adjust or add styles to enhance the layout and responsiveness.
+  - The application should be **Mobile Responsive**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Live API Integration
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The project uses live API endpoints from dummyjson.com:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Fetch All Products:** `https://dummyjson.com/products`
+- **Fetch Product by ID:** `https://dummyjson.com/products/{id}`
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## Test instructions
+
+- You should implement components. Apply minimum css to make the page look good. 
+
+  - **Product list**
+
+    - **Pagination**
+      - **Fetch All Products from:** [https://dummyjson.com/products](https://dummyjson.com/products)
+      - **Each item should display:**
+        - availabilityStatus
+        - brand
+        - category
+        - minimumOrderQuantity
+        - price (before and after discount)
+        - rating
+        - stock
+        - thumbnail
+        - title
+        
+
+  - **Product item**
+
+    - **On item click:**
+      - Display product full details in the center of app as can be seen in the [API](https://dummyjson.com/products/1)
+      - Make sure to include review section with (dates, comment and rating)
+
+- **Deploy your react code in netlify.com for demo purposes.**
+  - An issue might occur when you refresh the product detail page once deployed on Netlify. Consider that issue as well while deploying.
+ 
+- **Make your repo public and share your repo through this [google form](https://docs.google.com/forms/d/e/1FAIpQLSfpqEJL-Uz01ZIthyqB_VOhXXvrFNlZDizWkqNHFhanxyL90A/viewform).**
