@@ -14,7 +14,10 @@ const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
   ).toFixed(2);
 
   return (
-    <Link to={`/products/${product.id}`} className="block">
+    <Link
+      to={`coding-mountain-react-dev/products/${product.id}`}
+      className="block"
+    >
       <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 h-full">
         <div className="h-40 overflow-hidden bg-gray-100">
           <img
