@@ -14,10 +14,7 @@ const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
   ).toFixed(2);
 
   return (
-    <Link
-      to={`coding-mountain-react-dev/products/${product.id}`}
-      className="block"
-    >
+    <Link to={`/products/${product.id}`} className="block">
       <div className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 h-full">
         <div className="h-40 overflow-hidden bg-gray-100">
           <img
@@ -26,7 +23,7 @@ const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
             className="w-full h-full object-cover object-center"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = "https://via.placeholder.com/150"; // Fallback image if thumbnail fails to load
+              target.src = "https://via.placeholder.com/150";
             }}
           />
         </div>
