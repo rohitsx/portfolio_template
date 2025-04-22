@@ -308,7 +308,7 @@ const retroStyles = `
   }
 `;
 
-const GruvboxTerminal = ({ children }) => (
+const GruvboxTerminal = ({ children }: { children: any }) => (
   <div className="terminal-effect relative overflow-hidden">
     {children}
     <div className="terminal-overlay absolute top-0 left-0 right-0 bottom-0 pointer-events-none"></div>
@@ -395,7 +395,6 @@ const HomePage = () => {
                 className="hover:underline"
                 style={{
                   color: gruvboxTheme.gray,
-                  "&:hover": { color: gruvboxTheme.yellow },
                 }}
               >
                 rohitbindw@gmail.com
@@ -408,7 +407,6 @@ const HomePage = () => {
                 className="hover:underline"
                 style={{
                   color: gruvboxTheme.gray,
-                  "&:hover": { color: gruvboxTheme.yellow },
                 }}
               >
                 github.com/rohitsx
@@ -422,7 +420,6 @@ const HomePage = () => {
                 rel="noopener noreferrer"
                 style={{
                   color: gruvboxTheme.blue,
-                  "&:hover": { color: gruvboxTheme.aqua },
                 }}
               >
                 <FaTwitter size={24} />
@@ -433,7 +430,6 @@ const HomePage = () => {
                 rel="noopener noreferrer"
                 style={{
                   color: gruvboxTheme.blue,
-                  "&:hover": { color: gruvboxTheme.aqua },
                 }}
               >
                 <FaLinkedin size={24} />
@@ -444,7 +440,6 @@ const HomePage = () => {
                 rel="noopener noreferrer"
                 style={{
                   color: gruvboxTheme.blue,
-                  "&:hover": { color: gruvboxTheme.aqua },
                 }}
               >
                 <FaGithub size={24} />
@@ -480,7 +475,6 @@ const HomePage = () => {
                       borderWidth: "2px",
                       borderColor: gruvboxTheme.aqua,
                       backgroundColor: gruvboxTheme.bg,
-                      "&:hover": { backgroundColor: gruvboxTheme.bg1 },
                     }}
                   >
                     <h3
@@ -519,7 +513,6 @@ const HomePage = () => {
                           className="hover:underline flex items-center gap-1"
                           style={{
                             color: gruvboxTheme.blue,
-                            "&:hover": { color: gruvboxTheme.aqua },
                           }}
                         >
                           <FaExternalLinkAlt /> Live Demo
@@ -533,7 +526,6 @@ const HomePage = () => {
                           className="hover:underline flex items-center gap-1"
                           style={{
                             color: gruvboxTheme.blue,
-                            "&:hover": { color: gruvboxTheme.aqua },
                           }}
                         >
                           <FaGithub /> Source Code
