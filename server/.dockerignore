@@ -1,0 +1,25 @@
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Ignore version control directories
+.git
+.gitignore
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore node_modules if you're using Node.js in your project
+node_modules/
+
+# Ignore Docker files
+Dockerfile*
+docker-compose.yml
+
+# Ignore logs or temporary files
+*.log
+*.tmp

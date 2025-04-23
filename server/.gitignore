@@ -1,0 +1,34 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+
+# Pytest cache
+.cache/
+
+# IDE or editor files
+.idea/
+.vscode/
+*.swp
+
+# Database files
+*.sqlite3
+
+# FastAPI related
+*.db
+*.log
+
+# Dependency directories
+Pipfile.lock
+poetry.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
