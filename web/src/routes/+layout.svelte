@@ -1,17 +1,17 @@
 <script>
 	let { children } = $props();
 	import "../app.css";
-	import Navbar from "./layout/navbar.svelte";
+	import Navbar from "$lib/layout/navbar.svelte";
 </script>
 
-<div class="antialiased max-w-3xl mx-4 mt-8 mx-auto">
+<div class="antialiased max-w-2xl mx-auto mt-8">
 	<Navbar />
 	{@render children()}
 </div>
 
 <style>
 	:root {
-		background-color: #030a14; /* Dark blue-black background */
+		background-color: #030a14;
 		--font-sans: "iA Writer Quattro", -apple-system, BlinkMacSystemFont,
 			"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 	}

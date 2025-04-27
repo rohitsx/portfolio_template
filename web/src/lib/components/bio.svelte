@@ -1,6 +1,4 @@
-<div
-	class="px-4 py-4 space-y-6  rounded-md bg-[#1d2021]/30 "
->
+<div class="px-4 py-4 space-y-6 rounded-md bg-[#1d2021]/30">
 	<div></div>
 	<div class="flex items-center space-x-3">
 		<div class="text-[#FB4934] text-3xl font-light tracking-tight">rohit</div>
