@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="../main.css" />
+	<title>contact - devrohit.tech</title>
+</head>
+
+<body>
+	<div class="antialiased max-w-3xl pt-6 px-6 mx-auto">
+
+		<!-- navBar -->
+		<div class="my-8">
+			<nav class="bg-[#282828] px-4 py-1.5 flex justify-between rounded-xs">
+				<ul class="flex space-x-4">
+					<li class="flex flex-col items-center justify-center">
+						<a href="/" class="text-[#8ec07c] underline hover:text-[#689d6a]">
+							home
+						</a>
+					</li>
+
+					<li class="flex flex-col items-center justify-center">
+						<a href="https://www.youtube.com/@water-98" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
+							demo
+						</a>
+					</li>
+					<li class="flex flex-col items-center justify-center">
+						<a href="/contact" class="text-[#8ec07c] underline hover:text-[#689d6a]">
+							contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Contact Header -->
+		<div class="mb-8">
+			<h1 class="text-[#FB4934] text-3xl font-light tracking-tight">get in touch</h1>
+			<p class="text-[#EBDBB2] mt-2">
+				I'm open for new roles and collaborations. Drop me a message and I'll get back to you within <span class="text-[#83a598]">30 minutes</span>.
+			</p>
+		</div>
+
+		<!-- Contact Form -->
+		<div class="bg-[#1d2021] rounded p-4 border-2 border-[#B8BB26]/80 max-w-lg mx-auto">
+			<form id="contact-form" class="space-y-4">
+				<!-- Name Field -->
+				<div>
+					<label for="name" class="block text-[#B8BB26] text-sm mb-1">name <span class="text-[#FB4934]">*</span></label>
+					<input type="text" id="name" name="name" required 
+						class="w-full bg-[#282828] text-[#EBDBB2] border border-[#928364] text-sm rounded py-1.5 px-2 focus:outline-none focus:border-[#8ec07c]">
+				</div>
+
+				<!-- Email Field -->
+				<div>
+					<label for="email" class="block text-[#B8BB26] text-sm mb-1">email <span class="text-[#FB4934]">*</span></label>
+					<input type="email" id="email" name="email" required
+						class="w-full bg-[#282828] text-[#EBDBB2] border border-[#928364] text-sm rounded py-1.5 px-2 focus:outline-none focus:border-[#8ec07c]">
+				</div>
+
+				<!-- WhatsApp Number Field -->
+				<div>
+					<label for="whatsapp" class="block text-[#B8BB26] text-sm mb-1">whatsapp <span class="text-[#83a598] text-xs">(optional)</span></label>
+					<input type="tel" id="whatsapp" name="whatsapp"
+						class="w-full bg-[#282828] text-[#EBDBB2] border border-[#928364] text-sm rounded py-1.5 px-2 focus:outline-none focus:border-[#8ec07c]">
+				</div>
+
+				<!-- Message Field -->
+				<div>
+					<label for="message" class="block text-[#B8BB26] text-sm mb-1">message <span class="text-[#FB4934]">*</span></label>
+					<textarea id="message" name="message" rows="4" required
+						class="w-full bg-[#282828] text-[#EBDBB2] border border-[#928364] text-sm rounded py-1.5 px-2 focus:outline-none focus:border-[#8ec07c]"></textarea>
+				</div>
+
+				<!-- Submit Button -->
+				<div class="text-center">
+					<button type="submit"
+						class="bg-[#282828] text-[#8ec07c] border border-[#B8BB26] py-1.5 px-4 text-sm rounded hover:bg-[#3c3836] hover:text-[#689d6a] transition duration-300">
+						send message
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- Alternative Contact Methods -->
+		<div class="mt-8">
+			<h2 class="text-[#B8BB26] text-xl mb-4">or reach me at:</h2>
+			
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+				<div class="bg-[#1d2021] p-4 border-2 border-[#928364] rounded">
+					<h3 class="text-[#83a598] text-lg">email</h3>
+					<p class="text-[#EBDBB2]">rohitbindw@gmail.com</p>
+				</div>
+				
+				<div class="bg-[#1d2021] p-4 border-2 border-[#928364] rounded">
+					<h3 class="text-[#83a598] text-lg">social</h3>
+					<div class="flex space-x-4 mt-2">
+						<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
+							github
+						</a>
+						<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
+							x/twtr
+						</a>
+	<a href="https://www.linkedin.com/in/rohiitrb/" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
+								linkedin
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer Navigation -->
+		<div class="my-8 pb-6">
+			<nav class="bg-[#282828] px-4 pt-1 flex justify-between rounded-xs">
+				<ul class="flex space-x-4">
+					<li class="flex flex-col items-center justify-center">
+						<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+							rel="noopener noreferrer">
+							github
+						</a>
+					</li>
+
+					<li class="flex flex-col items-center justify-center">
+						<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+							rel="noopener noreferrer">
+							x/twtr
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</div>
+
+	<script>
+		// Form submission handler
+		document.getElementById('contact-form').addEventListener('submit', function(e) {
+			e.preventDefault();
+			
+			// Here you would typically send the form data to your backend
+			// For now, we'll just show a success message
+			alert('Message sent successfully! I\'ll get back to you within 30 minutes.');
+			this.reset();
+		});
+	</script>
+</body>
+
+</html>
