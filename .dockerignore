@@ -15,6 +15,7 @@ env/
 
 # Ignore node_modules if you're using Node.js in your project
 node_modules/
+backup/
 
 # Ignore Docker files
 Dockerfile*

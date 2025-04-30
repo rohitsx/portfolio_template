@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<link rel="stylesheet" href="main.css" />
+	<script src="beforeload.js"></script>
 	<title>devrohit.tech</title>
 </head>
 
@@ -14,28 +15,27 @@
 
 
 		<!-- navBar -->
-		<div class="my-8 ">
-			<nav class="bg-[#282828]  px-4 py-1.5 flex justify-between rounded-xs">
-				<ul class="flex space-x-4">
-					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="/" class="text-[#8ec07c] underline hover:text-[#689d6a]">
-							home
-						</a>
-					</li>
 
-					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="https://www.youtube.com/@water-98" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
-							demo
-						</a>
+		<div class="my-8">
+			<nav class="bg-[#282828] px-4 py-1.5 flex justify-between rounded-xs">
+				<!-- Left side nav links -->
+				<ul class="flex space-x-4">
+					<li class="flex flex-col items-center justify-center">
+						<a href="/" class="text-[#8ec07c] underline hover:text-[#689d6a]">home</a>
 					</li>
-					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="/contact" class="text-[#8ec07c] underline hover:text-[#689d6a]">
-							contact
-						</a>
+					<li class="flex flex-col items-center justify-center">
+						<a href="https://www.youtube.com/@water-98" class="text-[#8ec07c] underline hover:text-[#689d6a]"
+							target="_blank" rel="noopener noreferrer">yt</a>
 					</li>
 				</ul>
+
+				<!-- Right side "contact" link -->
+				<div class="flex items-center">
+					<a href="/contact" class="text-[#FB4934] underline hover:text-[#CC241D]">contact</a>
+				</div>
 			</nav>
 		</div>
+
 
 
 		<!-- bio -->
@@ -154,27 +154,43 @@
 				</div>
 			</div>
 
-			<div class="bg-[#1d2021] rounded-lg p-4 space-y-4 mb-18">
-				<h2 class="text-[#83a598] font-bold"><span>> </span>language breakdown</h2>
-				<div>
-					<ul id="language-breakdown" class="max-h-60 overflow-y-auto scrollbar-hide">
-					</ul>
+			<div class="bg-[#1d2021] rounded-lg p-4 mb-4 ">
+
+				<button type="button" onclick="toggleActivity()" class="text-[#83a598] font-bold">
+					<span>> </span>show coding activity
+				</button>
+				<div id="coding-activity" class="hidden mt-2">
+					<div class="border-2 border-[#B8BB26]/80 rounded">
+						<figure>
+							<embed src="https://wakatime.com/share/@rohitsx/7653ad37-38e5-4c5a-a6e2-9f816f9d0658.svg"></embed>
+						</figure>
+					</div>
 				</div>
 			</div>
+
+			<div class="bg-[#1d2021] rounded-lg p-4 space-y-4 mb-18">
+				<h2 class="text-[#83a598] font-bold"><span>> </span>language breakdown <span <div>
+						<ul id="language-breakdown" class="max-h-60 overflow-y-auto scrollbar-hide">
+							<!-- language-breakdown will render here -->
+						</ul>
+			</div>
 		</div>
+
 
 
 		<div class="my-8 pb-6 ">
 			<nav class="bg-[#282828]  px-4 pt-1 flex justify-between rounded-xs">
 				<ul class="flex space-x-4">
 					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
+						<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+							rel="noopener noreferrer">
 							github
 						</a>
 					</li>
 
 					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
+						<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+							rel="noopener noreferrer">
 							x/twtr
 						</a>
 					</li>
@@ -182,7 +198,21 @@
 			</nav>
 		</div>
 
+
+
+
+	</div>
+
 	</div>
 	<script src="main.js" type="module"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG73LKQ79Q"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-GG73LKQ79Q');
+	</script>
 
 </html>

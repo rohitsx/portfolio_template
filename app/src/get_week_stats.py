@@ -1,4 +1,3 @@
-from os import name
 import requests
 from lib.env import headers
 

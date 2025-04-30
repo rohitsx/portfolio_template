@@ -15,29 +15,28 @@
 		<!-- navBar -->
 		<div class="my-8">
 			<nav class="bg-[#282828] px-4 py-1.5 flex justify-between rounded-xs">
+				<!-- Left side nav links -->
 				<ul class="flex space-x-4">
 					<li class="flex flex-col items-center justify-center">
-						<a href="/" class="text-[#8ec07c] underline hover:text-[#689d6a]">
-							home
-						</a>
-					</li>
-
-					<li class="flex flex-col items-center justify-center">
-						<a href="https://www.youtube.com/@water-98" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
-							demo
-						</a>
+						<a href="/" class="text-[#8ec07c] underline hover:text-[#689d6a]">home</a>
 					</li>
 					<li class="flex flex-col items-center justify-center">
-						<a href="/contact" class="text-[#8ec07c] underline hover:text-[#689d6a]">
-							contact
-						</a>
+						<a href="https://www.youtube.com/@water-98" class="text-[#8ec07c] underline hover:text-[#689d6a]"
+							target="_blank" rel="noopener noreferrer">yt</a>
 					</li>
 				</ul>
+
+				<!-- Right side "contact" link -->
+				<div class="flex items-center">
+					<a href="/contact" class="text-[#FB4934] underline hover:text-[#CC241D]">contact</a>
+				</div>
 			</nav>
 		</div>
 
+
+
 		<!-- Contact Header -->
-		<div class="mb-8">
+		<div class="mb-8 px-3">
 			<h1 class="text-[#FB4934] text-3xl font-light tracking-tight">get in touch</h1>
 			<p class="text-[#EBDBB2] mt-2">
 				I'm open for new roles and collaborations. Drop me a message and I'll get back to you within <span class="text-[#83a598]">30 minutes</span>.
@@ -86,7 +85,7 @@
 		</div>
 
 		<!-- Alternative Contact Methods -->
-		<div class="mt-8">
+		<div class="mt-8 px-3">
 			<h2 class="text-[#B8BB26] text-xl mb-4">or reach me at:</h2>
 			
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -106,6 +105,9 @@
 						</a>
 	<a href="https://www.linkedin.com/in/rohiitrb/" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">
 								linkedin
+						</a>
+	<a  class="text-[#8ec07c] underline " >
+							D/rohitsx	
 						</a>
 
 					</div>
@@ -137,17 +139,17 @@
 
 	</div>
 
-	<script>
-		// Form submission handler
-		document.getElementById('contact-form').addEventListener('submit', function(e) {
-			e.preventDefault();
-			
-			// Here you would typically send the form data to your backend
-			// For now, we'll just show a success message
-			alert('Message sent successfully! I\'ll get back to you within 30 minutes.');
-			this.reset();
-		});
+	<script src="../src/handleForm.js" type="module">
 	</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG73LKQ79Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GG73LKQ79Q');
+</script>
 </body>
 
 </html>
