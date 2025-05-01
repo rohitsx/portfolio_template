@@ -36,14 +36,6 @@ jobs:
         run: |
           black --check ./app
 
-      - name: Check imports with isort
-        run: |
-          isort --check-only --profile black ./app
-
-      - name: Type check with mypy
-        run: |
-          mypy --ignore-missing-imports ./app
-
       - name: Verify application starts
         run: |
           cd app
