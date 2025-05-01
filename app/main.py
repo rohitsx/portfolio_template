@@ -24,6 +24,7 @@ class FormData(BaseModel):
     whatsapp: str
     message: str
 
+
 @app.post("/api/send-form-data")
 def send_form_data(data: FormData):
     return send_form(data)
