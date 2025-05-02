@@ -2,7 +2,7 @@ name: Python Code Check and Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [main, prod]
 
 jobs:
   lint-and-check:
