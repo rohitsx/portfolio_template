@@ -2,7 +2,7 @@ name: Python Code Check and Deploy
 
 on:
   push:
-    branches: [main, prod]
+    branches: [main]
 
 jobs:
   lint-and-check:
@@ -45,7 +45,7 @@ jobs:
 
   build-and-deploy:
     needs: lint-and-check
-    if: github.event_name == 'push' && (github.ref == 'refs/heads/prod')
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
 
     steps:
