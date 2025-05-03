@@ -4,22 +4,49 @@
 <head>
 	<meta charset="UTF-8" />
 
-	<!-- seo -->
+	<!-- Primary Meta Tags -->
+	<title>Rohit | Full-Stack Developer Portfolio | devrohit.tech</title>
 	<meta name="description"
 		content="Rohit - Full-stack developer from India. Portfolio showcasing projects, work experience, and coding stats.">
 	<meta name="keywords" content="full-stack developer, programmer, portfolio, web development, India, CS graduate">
 	<meta name="author" content="Rohit">
-	<meta property="og:title" content="Rohit - Full-stack Developer">
-	<meta property="og:description" content="Portfolio of Rohit, a full-stack developer from India.">
+	<link rel="canonical" href="https://devrohit.tech" />
+
+	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://devrohit.tech">
+	<meta property="og:title" content="Rohit - Full-stack Developer">
+	<meta property="og:description" content="Portfolio of Rohit, a full-stack developer from India.">
 	<meta property="og:image" content="https://avatars.githubusercontent.com/u/90490761?v=4">
-	<!-- seo -->
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@rohitsxx">
+	<meta name="twitter:creator" content="@rohitsxx">
+	<meta name="twitter:title" content="Rohit - Full-stack Developer">
+	<meta name="twitter:description" content="Portfolio of Rohit, a full-stack developer from India.">
+	<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/90490761?v=4">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="main.css" />
-	<script src="beforeload.js"></script>
-	<title>devrohit.tech</title>
+	<script src="beforeload.js" defer></script>
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rohit",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://devrohit.tech",
+    "sameAs": [
+      "https://github.com/rohitsx",
+      "https://x.com/rohitsxx",
+      "https://www.youtube.com/@water-98"
+    ],
+    "description": "Full-stack developer from India with computer science background, open for new roles"
+  }
+  </script>
 </head>
 
 <body>
@@ -37,11 +64,12 @@
 					</li>
 					<li class="flex flex-col items-center justify-center">
 						<a href="https://docs.google.com/document/d/1j6KBYvxVcRZ79GQ9qP_KID6wdPgkyY3Y/edit?usp=sharing&ouid=112132000278071131523&rtpof=true&sd=true"
-							class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank" rel="noopener noreferrer">resume</a>
+							title="Visit Rohit's Resume" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+							rel="noopener noreferrer">resume</a>
 					</li>
 					<li class="flex flex-col items-center justify-center">
 						<a href="https://www.youtube.com/@water-98" class="text-[#8ec07c] underline hover:text-[#689d6a]"
-							target="_blank" rel="noopener noreferrer">yt</a>
+							title="Visit Rohit's youtube" target="_blank" rel="noopener noreferrer">yt</a>
 					</li>
 				</ul>
 
@@ -56,7 +84,8 @@
 
 		<!-- bio -->
 		<div class="flex flex-col md:flex-row my-4 ">
-			<div class="text-[#fb4934] flex items-center justify-center">
+			<div class="text-[#fb4934] flex items-center justify-center" role="img"
+				aria-label="ASCII art representation of Rohit's developer brand">
 				<pre class="font-mono text-[6px]">
 					⠀⠀⠀⡠⠀⡠⠊⠁⠀⠀⣠⡴⠛⠉⣠⡶⠟⠋⣥⣠⣤⡀⠀⠀⠀⠀⠀⠀⠈⠑⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢶⡄⠀⠀⠀⠀⠀
 					⠀⢀⣜⣴⠟⢀⠄⢀⠴⠊⡁⠀⣠⠞⢁⠆⢀⠜⠋⠀⠈⠛⢦⡀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⣀⠀⠀⠀⠀⠀⠀⠈⠂⠈⠢⡀⠀⠀⠀
@@ -199,13 +228,14 @@
 				<ul class="flex space-x-4">
 					<li class="flex flex-col items-center justify-center" id={name}>
 						<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
-							rel="noopener noreferrer">
+							title="Visit Rohit's github profile" rel="noopener noreferrer">
 							github
 						</a>
 					</li>
 
 					<li class="flex flex-col items-center justify-center" id={name}>
 						<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+							title="Visit Rohit's x profile">
 							rel="noopener noreferrer">
 							x/twtr
 						</a>
