@@ -6,21 +6,43 @@ const addProjects = () => {
         "streamsync integrates voice with super chats for a more interactive streaming experience.",
       homepage: "https://streamSync.fun",
       html_url: "https://github.com/rohitsx/streamSync",
-      techStack: ["react", "crjsx vite background", "webrtc"],
+      techStack: [
+        "react", // frontend
+        "typescript", // frontend
+        "webrtc", // backend
+        "deno", // backend
+        "redis", // backend
+        "mongodb", // backend
+        "docker", // devops
+        "nginx", // devops
+        "google cloud", // devops
+      ],
     },
     {
       full_name: "omegle-clone",
       description:
         "real-time video chat app inspired by omegle. It allows users to connect with strangers for live video calls and text chats.",
       html_url: "https://github.com/rohitsx/omegleClone",
-      techStack: ["react", "nodejs", "socket.io", "webrtc"],
+      techStack: [
+        "react", // Frontend
+        "webrtc", // Backend
+        "nodejs", // Backend
+        "socket.io", // Backend
+        "redis", // Backend
+      ],
     },
     {
       full_name: "ai-movie-chatbot",
       description:
         "rest api chatbot allows users to interact with movie characters, retrieve movie scripts, and perform semantic searches using ai techniques.",
       html_url: "https://github.com/rohitsx/aiMovieChatbot",
-      techStack: ["python", "fastapi", "langchain", "gemini"],
+      techStack: [
+        "python", // Backend
+        "fastapi", // Backend
+        "redis", // Backend
+        "langchain", // Backend
+        "gemini", // Backend
+      ],
     },
   ];
 
