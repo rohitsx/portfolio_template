@@ -1,34 +1,34 @@
 export default function getCodingStats() {
-  try {
-    document.addEventListener("DOMContentLoaded", async () => {
-      const res = await fetch(`${window.env.API_URL}/weekstats`);
-      const data = await res.json();
+	try {
+		document.addEventListener("DOMContentLoaded", async () => {
+			const res = await fetch(`${window.env.API_URL}/weekstats`);
+			const data = await res.json();
 
-      const {
-        daily_average,
-        time_coding,
-        main_project,
-        main_editor,
-        languages,
-      } = data;
+			const {
+				daily_average,
+				time_coding,
+				main_project,
+				main_editor,
+				languages,
+			} = data;
 
-      function addCodingStats() {
-        const timeCoding = document.getElementById("time-coding");
-        const mainProject = document.getElementById("main-project");
-        const dailyAverage = document.getElementById("daily-average");
-        const mainEditor = document.getElementById("main-editor");
+			function addCodingStats() {
+				const timeCoding = document.getElementById("time-coding");
+				const mainProject = document.getElementById("main-project");
+				const dailyAverage = document.getElementById("daily-average");
+				const mainEditor = document.getElementById("main-editor");
 
-        timeCoding.innerText = time_coding;
-        mainProject.innerText = main_project;
-        dailyAverage.innerText = daily_average;
-        mainEditor.innerText = main_editor;
-      }
+				timeCoding.innerText = time_coding;
+				mainProject.innerText = main_project;
+				dailyAverage.innerText = daily_average;
+				mainEditor.innerText = main_editor;
+			}
 
-      function addLangBreakDown() {
-        languages.forEach((lang) => {
-          const langBreakDown = document.getElementById("language-breakdown");
-          const listItem = document.createElement("li");
-          listItem.innerHTML = `
+			function addLangBreakDown() {
+				languages.forEach((lang) => {
+					const langBreakDown = document.getElementById("language-breakdown");
+					const listItem = document.createElement("li");
+					listItem.innerHTML = `
 							<div class="text-zinc-200 font-mono text-sm p-2 w-full ">
 								<div class="flex justify-between mb-2 text-[#EBDBB2]">
 									<span class="font-bold">${lang.name}</span>
@@ -40,13 +40,13 @@ export default function getCodingStats() {
 							</div>
 `;
 
-          langBreakDown.appendChild(listItem);
-        });
-      }
-      addCodingStats();
-      addLangBreakDown();
-    });
-  } catch (err) {
-    return "Error fetching coding stats:", err;
-  }
+					langBreakDown.appendChild(listItem);
+				});
+			}
+			addCodingStats();
+			addLangBreakDown();
+		});
+	} catch (err) {
+		return "Error fetching coding stats:", err;
+	}
 }

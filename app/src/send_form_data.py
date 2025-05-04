@@ -3,7 +3,6 @@ import requests
 
 
 def send_form(data):
-    print("working")
     response = requests.get(
         telegram_endpoint, params={"chat_id": telegram_chatid, "text": f"{data}"}
     )

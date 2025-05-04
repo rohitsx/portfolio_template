@@ -29,8 +29,6 @@ def week_stats():
                 "percent": lang["percent"],
             }
         )
-
-    print((data.get("projects")[0]).get("name"))
     return {
         "daily_average": data.get("human_readable_daily_average"),
         "time_coding": data.get("human_readable_total"),

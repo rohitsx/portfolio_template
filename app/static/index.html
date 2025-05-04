@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 
 	<!-- Primary Meta Tags -->
-	<title>Rohit | Full-Stack Developer Portfolio | devrohit.tech</title>
+	<title>devrohit.tech</title>
 	<meta name="description"
 		content="Rohit - Full-stack developer from India. Portfolio showcasing projects, work experience, and coding stats.">
 	<meta name="keywords" content="full-stack developer, programmer, portfolio, web development, India, CS graduate">
@@ -28,6 +28,7 @@
 	<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/90490761?v=4">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<link rel="stylesheet" href="main.css" />
 	<script src="beforeload.js" defer></script>
 
@@ -83,8 +84,9 @@
 
 
 		<!-- bio -->
-		<div class="flex flex-col md:flex-row my-4 ">
-			<div class="text-[#fb4934] flex items-center justify-center" role="img"
+
+		<div class=" flex flex-col md:flex-row my-4 ">
+			<div class=" text-[#fb4934] flex items-center justify-center" role="img"
 				aria-label="ASCII art representation of Rohit's developer brand">
 				<pre class="font-mono text-[6px]">
 					⠀⠀⠀⡠⠀⡠⠊⠁⠀⠀⣠⡴⠛⠉⣠⡶⠟⠋⣥⣠⣤⡀⠀⠀⠀⠀⠀⠀⠈⠑⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢶⡄⠀⠀⠀⠀⠀
@@ -129,6 +131,7 @@
 				</pre>
 			</div>
 
+
 			<!-- Profile Info Section -->
 			<div class="text-sm space-y-2 px-3 md:px-8 py-4 md:py-6 md:mt-4">
 				<h1 class="text-[#FB4934] text-3xl font-light tracking-tight">rohit</h1>
@@ -136,16 +139,13 @@
 					<p>india</p>
 					<p>open for new roles</p>
 				</div>
-				<div class="text-[#928364] flex items-center">
-					<span class="w-2 h-2 rounded-full bg-[#928364] mr-2 animate-pulse"></span>
-					<div id="coding-stats">coding right now</div>
+				<div class="text-[#928364] flex items-center group relative" id="coding-stats">
 				</div>
 				<p class="text-[#EBDBB2] mt-8">
 					programmer. full-stack dev. cs graduate. I build clean & useful things.
 				</p>
 			</div>
 		</div>
-
 
 
 		<!-- projects and work -->
@@ -199,55 +199,39 @@
 				</div>
 			</div>
 
-			<div class="bg-[#1d2021] rounded-lg p-4 mb-4 ">
-
-				<button type="button" onclick="toggleActivity()" class="text-[#83a598] font-bold">
-					<span>> </span>show coding activity
-				</button>
-				<div id="coding-activity" class="hidden mt-2">
-					<div class="border-2 border-[#B8BB26]/80 rounded">
-						<figure>
-							<embed src="https://wakatime.com/share/@rohitsx/7653ad37-38e5-4c5a-a6e2-9f816f9d0658.svg"></embed>
-						</figure>
-					</div>
-				</div>
-			</div>
-
 			<div class="bg-[#1d2021] rounded-lg p-4 space-y-4 mb-18">
 				<h2 class="text-[#83a598] font-bold"><span>> </span>language breakdown <span <div>
 						<ul id="language-breakdown" class="max-h-60 overflow-y-auto scrollbar-hide">
 							<!-- language-breakdown will render here -->
 						</ul>
 			</div>
+
+
+
+			<div class="my-8 pb-6 ">
+				<nav class="bg-[#282828]  px-4 pt-1 flex justify-between rounded-xs">
+					<ul class="flex space-x-4">
+						<li class="flex flex-col items-center justify-center" id={name}>
+							<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+								title="Visit Rohit's github profile" rel="noopener noreferrer">
+								github
+							</a>
+						</li>
+
+						<li class="flex flex-col items-center justify-center" id={name}>
+							<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
+								title="Visit Rohit's x profile" rel="noopener noreferrer">
+								x/twtr
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+
+
 		</div>
-
-
-
-		<div class="my-8 pb-6 ">
-			<nav class="bg-[#282828]  px-4 pt-1 flex justify-between rounded-xs">
-				<ul class="flex space-x-4">
-					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="https://github.com/rohitsx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
-							title="Visit Rohit's github profile" rel="noopener noreferrer">
-							github
-						</a>
-					</li>
-
-					<li class="flex flex-col items-center justify-center" id={name}>
-						<a href="https://x.com/rohitsxx" class="text-[#8ec07c] underline hover:text-[#689d6a]" target="_blank"
-							title="Visit Rohit's x profile">
-							rel="noopener noreferrer">
-							x/twtr
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-
-
-
-
-	</div>
 
 	</div>
 	<script src="main.js" type="module"></script>
