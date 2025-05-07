@@ -16,7 +16,6 @@ export const load: PageServerLoad = async () => {
     }
     return await res.json();
 
-<<<<<<< HEAD
 		}catch{
       return "Failed to fetch data";
 		}
@@ -24,7 +23,6 @@ export const load: PageServerLoad = async () => {
   return {
     wakatimeData: await fetchWakatimeData(),
   };
-=======
 		const url = `https://wakatime.com/api/v1/users/current/heartbeats`;
 
 		const response = await fetch(url, {
@@ -43,5 +41,4 @@ export const load: PageServerLoad = async () => {
 			wakatimeData: null,
 		};
 	}
->>>>>>> fdedc6c (change date fromate in coding stats)
 };

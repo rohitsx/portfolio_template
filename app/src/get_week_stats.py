@@ -29,9 +29,13 @@ def week_stats():
                 "percent": lang["percent"],
             }
         )
+
+    total_hours_coding = int(data.get("total_seconds", 0) // 3600)
+    daily_avg_hours = round(data.get("daily_average", 0) / 3600, 2)
+
     return {
-        "daily_average": data.get("human_readable_daily_average"),
-        "time_coding": data.get("human_readable_total"),
+        "daily_average": str(daily_avg_hours) + " hr",
+        "time_coding": str(total_hours_coding) + " hr",
         "main_project": (data.get("projects")[0]).get("name"),
         "main_editor": (data.get("editors")[0]).get("name"),
         "languages": res_lang,
