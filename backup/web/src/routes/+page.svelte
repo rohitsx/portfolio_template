@@ -10,12 +10,8 @@
 	console.log("Page props:", wakatimeData);
 </script>
 
-<div class="p-2">
-	<Bio />
-	<div class="py-8">
-		<div class="grid grid-cols-1 md:grid-cols-2">
-			<div class="px-2"><Work {workData} /></div>
-			<div class="px-2"><Projects {projectsData} /></div>
-		</div>
-	</div>
+<Bio />
+<div class="py-8">
+	<Work {workData} />
+	<Projects {projectsData} />
 </div>
