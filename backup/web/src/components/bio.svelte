@@ -1,16 +1,17 @@
-<div class="text-[#EBDBB2] text-lg font-bold px-2 space-y-2">
-	<div class="flex items-baseline">
-		<h1 class="text-4xl text-[#B8BB26] mb-3 mr-4">Rohit</h1>
-		<span class="w-2 h-2 rounded-full mr-2 bg-[#928364] opacity-50"></span>
-		<span
-			class="text-[#A7C9A7] fade-text text-sm animate-pulse font-medium italic"
-			>checking status...
-		</span>
+<div class="bg-[#282828] space-y-2 py-8 pl-8 rounded-r-lg md:rounded-sm">
+	<div class="flex flex-row items-baseline">
+		<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
+		<div class="pl-4">
+			<span class="inline-block w-2 h-2 rounded-full bg-[#928364] opacity-50"
+			></span>
+			<span class="text-[#A7C9A7] fade-text text-sm animate-pulse italic"
+				>checking status...
+			</span>
+		</div>
 	</div>
-	<p>India, c.g.</p>
-
+	<p class="text-[#A7C9A7]">India, C.G.</p>
 	<p>
-		final-year cs student with intrest in full-stack development, primarily
+		final-year cs student with intrest in software development, primarily
 		focused on backend technologies.
 	</p>
 </div>
