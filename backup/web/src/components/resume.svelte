@@ -1,6 +1,4 @@
-<div
-	class="bg-[#282828] p-4 rounded-lg shadow-lg max-w-2xl mx-auto flex items-center space-x-4 font-mono"
->
+<div class="bg-[#282828] p-4 rounded-lg flex items-center space-x-4 font-mono">
 	<div
 		class="flex-shrink-0 w-24 h-24 bg-gray-700 rounded-md overflow-hidden border border-gray-600"
 	>

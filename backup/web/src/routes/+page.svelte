@@ -7,14 +7,14 @@
 	import Videos from "../components/video.svelte";
 </script>
 
-<div class="md:flex py-8 md:flex-row md:max-w-8xl">
-	<div class="pr-8 md:pr-16 mb-8 md:ml-16 md:max-w-2xl"><Bio /></div>
-	<div>
-		<div class="md:flex md:flex-row gap-6 max-w-6xl">
+<div class="md:flex gap-8 py-8 md:flex-row md:max-w-8xl">
+	<div class="pr-8 md:pr-0 md:w-2/5"><Bio /></div>
+	<div class="md:w-3/5 space-y-8 px-3 md:px-0">
+		<div class="sm:flex md:flex-row gap-6">
 			<Saas />
 			<ChromeExtension />
 		</div>
-		<div class="max-w-3xl space-y-8">
+		<div class="space-y-8">
 			<Resume />
 			<SideProject />
 			<Videos />

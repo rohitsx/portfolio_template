@@ -52,7 +52,7 @@
 </script>
 
 <div>
-	<div class="flex items-center mb-6">
+	<div class="flex items-center mb-4">
 		{#if urlIcon}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -75,11 +75,11 @@
 	<div class="relative w-full">
 		<div
 			bind:this={scrollContainer}
-			class="flex flex-row gap-6 overflow-x-auto pb-4 custom-scrollbar"
+			class="flex flex-row gap-6 overflow-x-auto custom-scrollbar"
 		>
 			{#each products as product (product.id)}
 				<div
-					class="bg-[#282828] p-5 rounded-lg shadow-md flex flex-col flex-none w-64"
+					class="bg-[#282828] p-4 h-86 rounded-lg shadow-md flex flex-col flex-none w-64"
 				>
 					<div class="flex-shrink-0 mb-4 rounded-md overflow-hidden">
 						<img

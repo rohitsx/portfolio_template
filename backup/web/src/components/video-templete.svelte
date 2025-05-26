@@ -69,11 +69,11 @@
 	<div class="relative w-full">
 		<div
 			bind:this={scrollContainer}
-			class="flex flex-row gap-6 overflow-x-auto pb-4 custom-scrollbar"
+			class="flex flex-row gap-6 overflow-x-auto custom-scrollbar"
 		>
 			{#each videos as video (video.id)}
 				<div
-					class="bg-[#282828] p-5 rounded-lg shadow-md flex flex-col flex-none w-64"
+					class="bg-[#282828] p-4 h-89 rounded-lg shadow-md flex flex-col flex-none w-64"
 				>
 					<div class="flex-shrink-0 mb-4 rounded-md overflow-hidden">
 						<img
@@ -82,7 +82,10 @@
 							class="w-full h-44 object-cover rounded-md"
 						/>
 					</div>
-					<p class="text-base mb-4">
+					<p
+						class="text-base mb-4"
+						class:line-clamp-4={!expandedDescriptions[video.id]}
+					>
 						{video.title}
 					</p>
 					{#if video.channelName}

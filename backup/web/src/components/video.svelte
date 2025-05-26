@@ -15,8 +15,7 @@
 		},
 		{
 			id: "vMq3I2Ey6Uc",
-			title:
-				"SquadX demo | WebRTC Multiple Peer Connection | Four Peer at a Time",
+			title: "SquadX demo | WebRTC Multiple Peer Connection ",
 			thumbnailUrl: "https://img.youtube.com/vi/vMq3I2Ey6Uc/0.jpg",
 		},
 		{

@@ -1,4 +1,4 @@
-<div class="space-y-4">
+<div>
 	<div class="flex px-4 md:px-0 space-x-4 mb-4 text-sm md:text-lg">
 		<a
 			href="https://www.linkedin.com/in/rohitsx"
@@ -20,31 +20,33 @@
 			>rohitbindw@gmail.com</a
 		>
 	</div>
-	<div class="bg-[#282828] space-y-2 p-4 rounded-r-lg md:rounded-sm">
-		<div class="flex flex-row items-baseline">
-			<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
+	<div class="space-y-8">
+		<div class="bg-[#282828] space-y-2 p-4 rounded-r-lg md:rounded-sm">
+			<div class="flex flex-row items-baseline">
+				<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
+			</div>
+			<p class="text-[#A7C9A7]">India, C.G.</p>
+			<p>
+				final-year cs student with intrest in software development, primarily
+				focused on backend technologies.
+			</p>
 		</div>
-		<p class="text-[#A7C9A7]">India, C.G.</p>
-		<p>
-			final-year cs student with intrest in software development, primarily
-			focused on backend technologies.
-		</p>
-	</div>
 
-	<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
-		<figure>
-			<embed
-				src="https://wakatime.com/share/@rohitsx/2465ecfc-ca2e-4a8d-a460-0814174082c7.svg"
-			/>
-		</figure>
-	</div>
+		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
+			<figure>
+				<embed
+					src="https://wakatime.com/share/@rohitsx/2465ecfc-ca2e-4a8d-a460-0814174082c7.svg"
+				/>
+			</figure>
+		</div>
 
-	<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
-		<figure>
-			<embed
-				src="https://wakatime.com/share/@rohitsx/b669f060-86d6-4e1b-880c-91e4b0620026.svg"
-			/>
-		</figure>
+		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
+			<figure>
+				<embed
+					src="https://wakatime.com/share/@rohitsx/b669f060-86d6-4e1b-880c-91e4b0620026.svg"
+				/>
+			</figure>
+		</div>
 	</div>
 </div>
 <!-- <span class="w-2 h-2 rounded-full bg-[#928364] mr-2 animate-ping"></span> -->
