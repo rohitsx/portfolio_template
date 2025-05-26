@@ -1,5 +1,5 @@
 <div class="space-y-4">
-	<div class="flex justify-center space-x-4 mb-4">
+	<div class="flex justify-center space-x-4 mb-4 text-sm md:text-lg">
 		<a
 			href="https://www.linkedin.com/in/rohitsx"
 			target="_blank"
