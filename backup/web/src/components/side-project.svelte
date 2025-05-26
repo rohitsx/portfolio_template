@@ -5,9 +5,18 @@
 	const products: Product[] = [
 		{
 			id: 1,
+			name: "Squadx",
+			description: "Omegle-like real-time video chat with multi-peer WebRTC.",
+			imageUrl: "https://img.youtube.com/vi/vMq3I2Ey6Uc/0.jpg",
+			buttonText: "Github",
+			buttonUrl: "https://github.com/rohitsx/SquadX",
+			buttonText2: "Demo",
+			buttonUrl2: "https://www.youtube.com/watch?v=vMq3I2Ey6Uc",
+		},
+		{
+			id: 2,
 			name: "callroom",
-			description:
-				"A lightweight, peer-to-peer video and audio calling application built with PHP, JavaScript (WebRTC), Ratchet (WebSockets), and MySQL, all containerized with Docker.",
+			description: "Lightweight video call app built with PHP & Ratchet.",
 			imageUrl: "https://img.youtube.com/vi/zQv_ktDfduM/0.jpg",
 			buttonText: "Github",
 			buttonUrl: "https://github.com/rohitsx/callRoom",
@@ -15,10 +24,9 @@
 			buttonUrl2: "https://www.youtube.com/watch?v=zQv_ktDfduM",
 		},
 		{
-			id: 2,
+			id: 3,
 			name: "OmegleClone",
-			description:
-				"OmegleMeet is a real-time video chat app inspired by Omegle. It allows users to connect with strangers for live video calls and text chats.",
+			description: "Real-time video chat app inspired by Omegle.",
 			imageUrl: "https://img.youtube.com/vi/YTGfyUdhu-U/0.jpg",
 			buttonText: "Github",
 			buttonUrl: "https://github.com/rohitsx/omegleClone",
@@ -26,10 +34,9 @@
 			buttonUrl2: "https://www.youtube.com/watch?v=YTGfyUdhu-U",
 		},
 		{
-			id: 3,
+			id: 4,
 			name: "aiMovieChatbot",
-			description:
-				"aiMovieChatbot is a multi-level REST API chatbot that allows users to interact with movie characters, retrieve movie scripts, and perform semantic searches using advanced AI techniques.",
+			description: "Multi-level REST API for semantic search & AI responses.",
 			imageUrl: "https://img.youtube.com/vi/k1eMtm2ISLg/0.jpg",
 			buttonText: "Github",
 			buttonUrl: "https://github.com/rohitsx/aiMovieChatbot",
@@ -37,7 +44,7 @@
 			buttonUrl2: "https://www.youtube.com/watch?v=k1eMtm2ISLg",
 		},
 		{
-			id: 4,
+			id: 5,
 			name: "Telegram bot",
 			description: "Simple Telegram bot",
 			imageUrl: "https://img.youtube.com/vi/k1eMtm2ISLg/0.jpg",
@@ -45,10 +52,9 @@
 			buttonUrl: "https://www.youtube.com/watch?v=Cu8M1_eS4kA",
 		},
 		{
-			id: 5,
+			id: 6,
 			name: "web3-wallet",
-			description:
-				"A simple, user-friendly cryptocurrency wallet application supporting Solana and Ethereum blockchains.",
+			description: "Simple Web3 wallet for Solana and Ethereum.",
 			imageUrl:
 				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748191684/2025-05-25_22-17_ag1rf4.png",
 			buttonText: "Github",
@@ -57,7 +63,7 @@
 			buttonUrl2: "https://www.youtube.com/watch?v=yG8irvUutdI",
 		},
 		{
-			id: 6,
+			id: 7,
 			name: "WebRTC",
 			description: "WebRTC perfect negotiation logic.",
 			imageUrl:
@@ -68,10 +74,9 @@
 			buttonUrl2: "https://www.youtube.com/watch?v=DlcM5WlSlDs",
 		},
 		{
-			id: 7,
+			id: 8,
 			name: "ycScaper",
-			description:
-				"A Python-based tool to scrape Y Combinator company data, including startup URLs and social media links.",
+			description: "Python tool to scrape YC company data.",
 			imageUrl:
 				"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Y_Combinator_logo.svg/1024px-Y_Combinator_logo.svg.png",
 			buttonText: "Github",

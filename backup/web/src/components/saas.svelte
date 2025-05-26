@@ -6,11 +6,11 @@
 		{
 			id: 1,
 			name: "JobFitResume",
-			description: "Generate AI UGC video ads for your product",
+			description: "Tailor your resume to the job description.",
 			buttonText: "Tailor Resume",
 			imageUrl:
 				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748168053/2025-05-25_15-38_1_ejpoyj.png",
-			productUrl: "https://jobfitresume.vercel.app",
+			buttonUrl: "https://jobfitresume.vercel.app",
 		},
 
 		{
@@ -20,7 +20,7 @@
 			buttonText: "Try",
 			imageUrl:
 				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748168053/2025-05-25_15-39_1_wg0tyb.png",
-			productUrl: "https://jpg-to-png-seven.vercel.app",
+			buttonUrl: "https://jpg-to-png-seven.vercel.app",
 		},
 	];
 </script>

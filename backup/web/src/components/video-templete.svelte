@@ -1,12 +1,8 @@
 <script lang="ts">
 	import { onMount, onDestroy } from "svelte";
-	import { type Product } from "$lib/types/product-type";
+	import { type YouTubeVideo } from "$lib/types/youtube-video-type";
 
-	let {
-		products,
-		title,
-		urlIcon = true,
-	}: { products: Product[]; title: string; urlIcon?: boolean } = $props();
+	let { videos }: { videos: YouTubeVideo[] } = $props();
 
 	let scrollContainer: HTMLDivElement | null;
 	let showRightElements: boolean = $state(true);
@@ -21,10 +17,10 @@
 		}
 	}
 
-	function toggleDescription(productId: string): void {
+	function toggleDescription(videoId: string): void {
 		expandedDescriptions = {
 			...expandedDescriptions,
-			[productId]: !expandedDescriptions[productId],
+			[videoId]: !expandedDescriptions[videoId],
 		};
 	}
 
@@ -49,27 +45,25 @@
 			});
 		}
 	}
+
+	function getYouTubeWatchUrl(videoId: string): string {
+		return `https://www.youtube.com/watch?v=${videoId}`;
+	}
 </script>
 
 <div>
 	<div class="flex items-center mb-6">
-		{#if urlIcon}
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="2"
-				stroke="currentColor"
-				class="h-6 w-6 mr-3 text-[#a9b665]"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-				/>
-			</svg>
-		{/if}
-		<h2 class="text-2xl font-bold text-[#a9b665]">{title}</h2>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 24 24"
+			fill="currentColor"
+			class="h-6 w-6 mr-3 text-[#a9b665]"
+		>
+			<path
+				d="M19.615 3.184c-1.342-.164-2.825-.268-4.32-.268C13.43 2.916 12 3 12 3s-1.43.084-3.295.268c-1.495.1-2.978.204-4.32.268C2.56 3.738 2 4.336 2 5.06v13.88C2 19.664 2.56 20.262 3.285 20.364c1.342.164 2.825.268 4.32.268C10.57 21.084 12 21 12 21s1.43-.084 3.295-.268c1.495-.1 2.978-.204 4.32-.268C21.44 20.262 22 19.664 22 18.94V5.06c0-.724-.56-1.322-1.385-1.476zM10.233 15.35V8.65L15.82 12l-5.587 3.35z"
+			/>
+		</svg>
+		<h2 class="text-2xl font-bold text-[#a9b665]">Demo Videos</h2>
 	</div>
 
 	<div class="relative w-full">
@@ -77,49 +71,38 @@
 			bind:this={scrollContainer}
 			class="flex flex-row gap-6 overflow-x-auto pb-4 custom-scrollbar"
 		>
-			{#each products as product (product.id)}
+			{#each videos as video (video.id)}
 				<div
 					class="bg-[#282828] p-5 rounded-lg shadow-md flex flex-col flex-none w-64"
 				>
 					<div class="flex-shrink-0 mb-4 rounded-md overflow-hidden">
 						<img
-							src={product.imageUrl}
-							alt={product.name}
-							class="w-full h-32 object-cover rounded-md"
+							src={video.thumbnailUrl}
+							alt={video.title}
+							class="w-full h-44 object-cover rounded-md"
 						/>
 					</div>
-					<h3 class="text-xl font-semibold text-[#a9b665] mb-2">
-						{product.name}
-					</h3>
-					<p
-						class="text-base mb-4"
-						class:line-clamp-4={!expandedDescriptions[product.id]}
-					>
-						{product.description}
+					<p class="text-base mb-4">
+						{video.title}
 					</p>
-					{#if product.description.length > 100}
-						<button
-							class="text-[#A7C9A7] text-sm mb-4 self-start hover:underline"
-							onclick={() => toggleDescription(String(product.id))}
+					{#if video.channelName}
+						<a
+							href={video.channelUrl || "#"}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-[#AAAAAA] text-sm mb-2 hover:underline"
 						>
-							{expandedDescriptions[product.id] ? "Show Less" : "Read More"}
-						</button>
+							{video.channelName}
+						</a>
 					{/if}
 					<div class="flex gap-4 mt-auto">
 						<button
 							class="bg-[#b8bb26] text-[#282828] py-2 px-4 rounded-md font-semibold transition duration-200 ease-in-out self-start hover:bg-[#a9b665]"
-							onclick={() => window.open(product.buttonUrl, "_blank")}
+							onclick={() =>
+								window.open(getYouTubeWatchUrl(video.id), "_blank")}
 						>
-							{product.buttonText}
+							Watch Now
 						</button>
-						{#if product.buttonText2}
-							<button
-								class="bg-[#b8bb26] text-[#282828] py-2 px-4 rounded-md font-semibold transition duration-200 ease-in-out self-start hover:bg-[#a9b665]"
-								onclick={() => window.open(product.buttonUrl2, "_blank")}
-							>
-								{product.buttonText2}
-							</button>
-						{/if}
 					</div>
 				</div>
 			{/each}
@@ -128,7 +111,7 @@
 		{#if showRightElements}
 			<div
 				class="absolute right-0 top-0 h-full w-48 pointer-events-none z-10 flex items-center justify-end pr-4"
-				style="background: linear-gradient(to left, rgba(60,56,54,0.7) 0%, rgba(60,56,54,0) 100%);"
+				style="background: linear-gradient(to left, rgba(40,40,40,0.7) 0%, rgba(40,40,40,0) 100%);"
 			>
 				<button
 					onclick={scrollRight}
