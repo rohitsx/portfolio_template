@@ -1,14 +1,29 @@
 <div class="space-y-4">
+	<div class="flex justify-center space-x-4 mb-4">
+		<a
+			href="https://www.linkedin.com/in/rohitsx"
+			target="_blank"
+			class="text-[#B8BB26] hover:underline">LinkedIn</a
+		>
+		<a
+			href="https://x.com/rohitsxx"
+			target="_blank"
+			class="text-[#B8BB26] hover:underline">X.com</a
+		>
+		<a
+			href="https://github.com/rohitsx"
+			target="_blank"
+			class="text-[#B8BB26] hover:underline">GitHub</a
+		>
+		<a
+			href="https://wakatime.com/@rohitsx"
+			target="_blank"
+			class="text-[#B8BB26] hover:underline">WakaTime</a
+		>
+	</div>
 	<div class="bg-[#282828] space-y-2 p-4 rounded-r-lg md:rounded-sm">
 		<div class="flex flex-row items-baseline">
 			<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
-			<!-- <div class="pl-4"> -->
-			<!-- 	<span class="inline-block w-2 h-2 rounded-full bg-[#928364] opacity-50" -->
-			<!-- 	></span> -->
-			<!-- 	<span class="text-[#A7C9A7] fade-text text-sm animate-pulse italic" -->
-			<!-- 		>checking status... -->
-			<!-- 	</span> -->
-			<!-- </div> -->
 		</div>
 		<p class="text-[#A7C9A7]">India, C.G.</p>
 		<p>
