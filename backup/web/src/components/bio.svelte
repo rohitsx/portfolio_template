@@ -15,10 +15,9 @@
 			target="_blank"
 			class="text-[#B8BB26] hover:underline">GitHub</a
 		>
-		<a
-			href="https://wakatime.com/@rohitsx"
-			target="_blank"
-			class="text-[#B8BB26] hover:underline">WakaTime</a
+
+		<a href="mailto:rohitbindw@gmail.com" class="text-[#B8BB26] hover:underline"
+			>rohitbindw@gmail.com</a
 		>
 	</div>
 	<div class="bg-[#282828] space-y-2 p-4 rounded-r-lg md:rounded-sm">
