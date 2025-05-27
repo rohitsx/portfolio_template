@@ -20,7 +20,7 @@
 			>rohitbindw@gmail.com</a
 		>
 	</div>
-	<div class="space-y-8">
+	<div class="space-y-10">
 		<div class="bg-[#282828] space-y-2 p-4 rounded-r-lg md:rounded-sm">
 			<div class="flex flex-row items-baseline">
 				<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
