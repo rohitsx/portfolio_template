@@ -42,7 +42,7 @@
 			</p>
 		</div>
 
-		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
+		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
 			<figure>
 				<embed
 					src="https://wakatime.com/share/@rohitsx/5c709e8d-bdb6-4d42-8496-f3959dcaa66b.svg"
@@ -50,7 +50,7 @@
 			</figure>
 		</div>
 
-		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
+		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
 			<figure>
 				<embed
 					src="https://wakatime.com/share/@rohitsx/24f23cb6-6ee1-49dc-9684-a3948d57ebfb.svg"
