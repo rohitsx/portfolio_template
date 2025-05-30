@@ -1,23 +1,33 @@
+<script>
+	import TechStack from "./tech-stack.svelte";
+</script>
+
 <div>
-	<div class="flex px-4 md:px-0 space-x-4 mb-4 text-sm md:text-lg">
+	<div
+		class="flex flex-wrap mb-4 space-x-4 text-sm pl-4 md:space-x-3 lg:space-x-4 lg:text-lg"
+	>
+		<a href="mailto:rohitbindw@gmail.com" class="text-[#B8BB26] hover:underline"
+			>rohitbindw@gmail.com</a
+		>
 		<a
 			href="https://www.linkedin.com/in/rohitsx"
 			target="_blank"
 			class="text-[#B8BB26] hover:underline">LinkedIn</a
 		>
 		<a
-			href="https://x.com/rohitsxx"
+			href="https://wakatime.com/@rohitsx"
 			target="_blank"
-			class="text-[#B8BB26] hover:underline">X.com</a
+			class="text-[#B8BB26] hover:underline md:hidden 2xl:block">Wakatime</a
 		>
 		<a
 			href="https://github.com/rohitsx"
 			target="_blank"
 			class="text-[#B8BB26] hover:underline">GitHub</a
 		>
-
-		<a href="mailto:rohitbindw@gmail.com" class="text-[#B8BB26] hover:underline"
-			>rohitbindw@gmail.com</a
+		<a
+			href="https://x.com/rohitsxx"
+			target="_blank"
+			class="text-[#B8BB26] hover:underline">X</a
 		>
 	</div>
 	<div class="space-y-10">
@@ -32,21 +42,22 @@
 			</p>
 		</div>
 
-		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
+		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
 			<figure>
 				<embed
-					src="https://wakatime.com/share/@rohitsx/2465ecfc-ca2e-4a8d-a460-0814174082c7.svg"
+					src="https://wakatime.com/share/@rohitsx/5c709e8d-bdb6-4d42-8496-f3959dcaa66b.svg"
 				/>
 			</figure>
 		</div>
 
-		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
+		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
 			<figure>
 				<embed
-					src="https://wakatime.com/share/@rohitsx/b669f060-86d6-4e1b-880c-91e4b0620026.svg"
+					src="https://wakatime.com/share/@rohitsx/24f23cb6-6ee1-49dc-9684-a3948d57ebfb.svg"
 				/>
 			</figure>
 		</div>
+		<TechStack />
 	</div>
 </div>
 <!-- <span class="w-2 h-2 rounded-full bg-[#928364] mr-2 animate-ping"></span> -->

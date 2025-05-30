@@ -10,14 +10,18 @@
 
 	let scrollContainer: HTMLDivElement | null;
 	let showRightElements: boolean = $state(true);
+	let showLeftElements: boolean = $state(false); // New state for left button visibility
 
 	let expandedDescriptions: { [key: string]: boolean } = $state({});
 
 	function checkScroll(): void {
 		if (scrollContainer) {
+			// Check if there's content to scroll to the right
 			showRightElements =
 				scrollContainer.scrollWidth - scrollContainer.scrollLeft >
 				scrollContainer.clientWidth + 1;
+			// Check if there's content to scroll to the left
+			showLeftElements = scrollContainer.scrollLeft > 1;
 		}
 	}
 
@@ -45,6 +49,16 @@
 		if (scrollContainer) {
 			scrollContainer.scrollBy({
 				left: scrollContainer.clientWidth / 2,
+				behavior: "smooth",
+			});
+		}
+	}
+
+	function scrollLeft(): void {
+		// New function to scroll left
+		if (scrollContainer) {
+			scrollContainer.scrollBy({
+				left: -scrollContainer.clientWidth / 2,
 				behavior: "smooth",
 			});
 		}
@@ -125,14 +139,40 @@
 			{/each}
 		</div>
 
+		{#if showLeftElements}
+			<div
+				class="absolute left-0 top-0 h-full w-48 pointer-events-none z-10 flex items-center justify-start pl-4"
+			>
+				<button
+					onclick={scrollLeft}
+					class="pointer-events-auto bg-[#b8bb26] text-[#282828] rounded-full p-3 shadow-lg hover:bg-[#a9b665] transition-colors duration-200 flex items-center justify-center"
+					aria-label="Scroll left"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						stroke-width="2"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15 19l-7-7 7-7"
+						/>
+					</svg>
+				</button>
+			</div>
+		{/if}
+
 		{#if showRightElements}
 			<div
 				class="absolute right-0 top-0 h-full w-48 pointer-events-none z-10 flex items-center justify-end pr-4"
-				style="background: linear-gradient(to left, rgba(60,56,54,0.7) 0%, rgba(60,56,54,0) 100%);"
 			>
 				<button
 					onclick={scrollRight}
-					class="hidden md:block pointer-events-auto bg-[#b8bb26] text-[#282828] rounded-full p-3 shadow-lg hover:bg-[#a9b665] transition-colors duration-200 flex items-center justify-center"
+					class="pointer-events-auto bg-[#b8bb26] text-[#282828] rounded-full p-3 shadow-lg hover:bg-[#a9b665] transition-colors duration-200 flex items-center justify-center"
 					aria-label="Scroll right"
 				>
 					<svg

@@ -1,5 +1,5 @@
 import type { PageLoad } from "./$types";
 
 export async function load({ data }: {}) {
-  console.log(data);
+	console.log(data);
 }

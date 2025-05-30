@@ -12,9 +12,20 @@
 				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748168053/2025-05-25_15-38_1_ejpoyj.png",
 			buttonUrl: "https://jobfitresume.vercel.app",
 		},
-
 		{
 			id: 2,
+			name: "StreamSync",
+			description:
+				"Voice to Super Chats for direct creator-audience interaction.",
+			buttonText: "Try",
+			imageUrl: "https://img.youtube.com/vi/36hbYPvvbVQ/0.jpg",
+			buttonUrl: "https://streamsync.fun",
+			buttonText2: "Github",
+			buttonUrl2: "https://github.com/rohitsx/StreamSync",
+		},
+
+		{
+			id: 3,
 			name: "JpgToPng",
 			description: "Convert JPG to PNG in seconds",
 			buttonText: "Try",
@@ -25,4 +36,4 @@
 	];
 </script>
 
-<ProductTemplete {products} title="SAAS I Build" />
+<ProductTemplete {products} title="Tools I Build" />
