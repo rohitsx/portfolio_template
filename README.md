@@ -1,7 +1,6 @@
 # Portfolio Web App
 
 A lightweight personal portfolio built with **FastAPI** (Python backend) and a **static frontend** (HTML/CSS/JS + Tailwind). Features:
-[![wakatime](https://wakatime.com/badge/user/cf1154fa-692c-4825-a340-ef4f714be7f7/project/60027ede-fa1b-4b04-be01-0a6fa266faf5.svg)](https://wakatime.com/badge/user/cf1154fa-692c-4825-a340-ef4f714be7f7/project/60027ede-fa1b-4b04-be01-0a6fa266faf5)
 
 - **WakaTime Integration** – Displays weekly coding stats
 - **Telegram Contact Form** – Sends messages via a bot

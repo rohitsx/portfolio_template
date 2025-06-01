@@ -12,20 +12,11 @@
 
 	function checkScroll(): void {
 		if (scrollContainer) {
-			// Check if there's content to scroll to the right
 			showRightElements =
 				scrollContainer.scrollWidth - scrollContainer.scrollLeft >
 				scrollContainer.clientWidth + 1;
-			// Check if there's content to scroll to the left
 			showLeftElements = scrollContainer.scrollLeft > 1;
 		}
-	}
-
-	function toggleDescription(videoId: string): void {
-		expandedDescriptions = {
-			...expandedDescriptions,
-			[videoId]: !expandedDescriptions[videoId],
-		};
 	}
 
 	onMount(() => {
@@ -61,7 +52,7 @@
 	}
 
 	function getYouTubeWatchUrl(videoId: string): string {
-		return `https://www.youtube.com/watch?v=$${videoId}`;
+		return `https://www.youtube.com/watch?v=${videoId}`;
 	}
 </script>
 
@@ -102,16 +93,8 @@
 					>
 						{video.title}
 					</p>
-					{#if video.channelName}
-						<a
-							href={video.channelUrl || "#"}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="text-[#AAAAAA] text-sm mb-2 hover:underline"
-						>
-							{video.channelName}
-						</a>
-					{/if}
+
+					<p>{video.channelName}</p>
 					<div class="flex gap-4 mt-auto">
 						<button
 							class="bg-[#b8bb26] text-[#282828] py-2 px-4 rounded-md font-semibold transition duration-200 ease-in-out self-start hover:bg-[#a9b665]"
