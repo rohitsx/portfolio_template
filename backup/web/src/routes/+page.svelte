@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Bio from "../components/bio.svelte";
-	import Resume from "../components/resume.svelte";
-	import SideProject from "../components/side-project.svelte";
-	import Tools from "../components/tools.svelte";
-	import Videos from "../components/video.svelte";
+	import Bio from "$leftDiv/Bio.svelte";
+	import Resume from "$rightDiv/Resume.svelte";
+	import SideProject from "$rightDiv/SideProject.svelte";
+	import Tools from "$rightDiv/Tools.svelte";
+	import Video from "$rightDiv/Video.svelte";
 </script>
 
 <div class="px-0 mx-auto text-lg lg:px-20 xl:px-50">
@@ -13,7 +13,7 @@
 			<Tools />
 			<Resume />
 			<SideProject />
-			<Videos />
+			<Video />
 		</div>
 	</div>
 </div>

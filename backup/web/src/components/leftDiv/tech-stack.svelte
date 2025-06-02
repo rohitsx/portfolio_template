@@ -7,6 +7,7 @@
 		"React",
 		"Next.js",
 		"Svelte",
+		"tailwindcss",
 		"WebRTC",
 		"Vite",
 		"crxJS",
@@ -35,16 +36,25 @@
 		"Redis",
 		"Prisma ORM",
 		"PHP",
+		"RAG",
+		"Langchain",
+		"Chroma",
+		"Pinecone",
+		"Qdrant",
+		"Vector Db",
 	];
+
+	const others = ["Nvim", "Claude", "Gemini"];
 </script>
 
 <div
-	class="bg-[#282828] space-y-10 p-4 rounded-r-lg md:rounded-sm hidden md:block"
+	class="bg-[#282828] space-y-6 p-4 rounded-r-lg md:rounded-sm hidden md:block"
 >
-	<h2 class="text-2xl font-bold text-[#a9b665]">Tech Stack</h2>
-	<div class="space-y-8">
+	<h2 class="text-xl font-bold text-[#a9b665]">Tech Stack</h2>
+	<div class="space-y-5 text-sm">
 		<TechStackSection title="Frontend" items={frontEnd} />
 		<TechStackSection title="Backend" items={backend} />
 		<TechStackSection title="Devops" items={devOps} />
+		<TechStackSection title="Other" items={others} />
 	</div>
 </div>

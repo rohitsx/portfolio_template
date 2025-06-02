@@ -1,8 +1,8 @@
 <script lang="ts">
-	import ProductTemplete from "./product-templete.svelte";
-	import { type Product } from "$lib/types/product-type";
+	import DynamicScroll from "./DynamicScroll.svelte";
+	import type { Items } from "$lib/types/DynamicScrolltype";
 
-	const products: Product[] = [
+	const products: Items[] = [
 		{
 			id: 1,
 			name: "JobFitResume",
@@ -36,4 +36,4 @@
 	];
 </script>
 
-<ProductTemplete {products} title="Tools I Build" />
+<DynamicScroll items={products} title="Tools I Build" />

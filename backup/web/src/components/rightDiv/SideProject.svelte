@@ -1,8 +1,8 @@
 <script lang="ts">
-	import ProductTemplete from "./product-templete.svelte";
-	import { type Product } from "$lib/types/product-type";
+	import type { Items } from "$lib/types/DynamicScrolltype";
+	import DynamicScroll from "./DynamicScroll.svelte";
 
-	const products: Product[] = [
+	const items: Items[] = [
 		{
 			id: 1,
 			name: "Squadx",
@@ -47,7 +47,7 @@
 			id: 5,
 			name: "Telegram bot",
 			description: "Simple Telegram bot",
-			imageUrl: "https://img.youtube.com/vi/k1eMtm2ISLg/0.jpg",
+			imageUrl: "https://img.youtube.com/vi/Cu8M1_eS4kA/0.jpg",
 			buttonText: "Demo",
 			buttonUrl: "https://www.youtube.com/watch?v=Cu8M1_eS4kA",
 		},
@@ -85,4 +85,4 @@
 	];
 </script>
 
-<ProductTemplete {products} title="Side Project" />
+<DynamicScroll {items} title="Side Project" />
