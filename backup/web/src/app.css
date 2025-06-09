@@ -5,3 +5,14 @@
 	color: #e0e0e0;
 	font-family: monospace;
 }
+
+@layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}

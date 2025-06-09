@@ -1,5 +1,25 @@
-<script>
+<script lang="ts">
+	import { onMount } from "svelte";
 	import TechStack from "./tech-stack.svelte";
+	import type { LanguagesProp } from "$lib/types/WakaTime.type";
+
+	let codingActivity: any = null;
+	let languages: LanguagesProp | null = null;
+
+	onMount(async () => {
+		let lares = await fetch(
+			"https://wakatime.com/share/@rohitsx/8ddff605-587d-4c35-bf4a-d09b21d26194.json",
+		);
+		// let cares = await fetch(
+		// 	"https://wakatime.com/share/@rohitsx/31429488-010d-4ae1-90b4-403b1049b880.json",
+		// );
+
+		languages = await lares.json();
+		console.log(languages);
+		// codingActivity = await cares.json();
+	});
+
+	console.log(languages);
 </script>
 
 <div>
@@ -42,40 +62,33 @@
 			</p>
 		</div>
 
-		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm">
-			<figure>
-				<embed
-					src="https://wakatime.com/share/@rohitsx/5c709e8d-bdb6-4d42-8496-f3959dcaa66b.svg"
-				/>
-			</figure>
-		</div>
+		{#if languages}
+			<div class="bg-[#282828] p-4 h-80 rounded-r-lg md:rounded-sm md:block">
+				<h2 class="text-xl font-bold text-[#a9b665] mb-4">
+					Languages <span class="text-[#A7C9A7] text-xs italic"
+						>Powered by <a href="https://wakatime.com/">wakatime</a></span
+					>
+				</h2>
+				<div class="overflow-y-auto no-scrollbar space-y-1 h-61">
+					{#each languages.data as { name, percent, color }}
+						<div class="flex gap-3 items-center">
+							<h1 class="w-1/4">{name}</h1>
+							<div class="w-3/4">
+								<div
+									class="bg-amber-50 rounded-sm h-4"
+									style="width: {percent +
+										(90 - Number(languages.data[0].percent))}%									"
+								></div>
+							</div>
+						</div>
+					{/each}
+				</div>
+			</div>
+		{/if}
 
-		<div class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block">
-			<figure>
-				<embed
-					src="https://wakatime.com/share/@rohitsx/24f23cb6-6ee1-49dc-9684-a3948d57ebfb.svg"
-				/>
-			</figure>
-		</div>
+		<!-- <div -->
+		<!-- 	class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block" -->
+		<!-- ></div> -->
 		<TechStack />
 	</div>
 </div>
-<!-- <span class="w-2 h-2 rounded-full bg-[#928364] mr-2 animate-ping"></span> -->
-<!-- <p>coding right now <span class="italic underline font-bold">i</span></p> -->
-<!---->
-<!-- <div -->
-<!-- 	class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-[#1d2021] -->
-<!--            border border-[#504945] rounded shadow-lg invisible group-hover:visible -->
-<!--            transition-opacity opacity-0 group-hover:opacity-100 duration-200 pointer-events-none -->
-<!--            whitespace-nowrap z-10 min-w-[160px]" -->
-<!-- > -->
-<!-- 	<p class="text-[#83a598]"> -->
-<!-- 		Project: <span class="text-[#ebdbb2]">hii</span> -->
-<!-- 	</p> -->
-<!-- 	<p class="text-[#83a598]"> -->
-<!-- 		Language: <span class="text-[#ebdbb2]">hi</span> -->
-<!-- 	</p> -->
-<!-- </div> -->
-<!---->
-<!-- <span class="w-2 h-2 rounded-full bg-[#928364] mr-2 animate-pulse"></span> -->
-<!-- <p>not coding right now</p> -->
