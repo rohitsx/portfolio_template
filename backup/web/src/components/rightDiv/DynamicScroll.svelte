@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Items } from "$lib/types/DynamicScrolltype";
+	import type { Items } from "$lib/types/DynamicScroll.type";
 	import { onMount, onDestroy } from "svelte";
 	import UrlIconSvg from "../Svg/UrlIconSvg.svelte";
 	import ScrollBtn from "$btn/ScrollBtn.svelte";

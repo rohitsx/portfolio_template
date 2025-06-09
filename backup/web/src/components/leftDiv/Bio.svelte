@@ -52,10 +52,10 @@
 	</div>
 	<div class="space-y-10">
 		<div class="bg-[#282828] space-y-2 p-4 rounded-r-lg md:rounded-sm">
-			<div class="flex flex-row items-baseline">
+			<div class="flex flex-row gap-3 items-baseline">
 				<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
+				<p class="text-[#A7C9A7] italic">India</p>
 			</div>
-			<p class="text-[#A7C9A7]">India, C.G.</p>
 			<p>
 				final-year cs student with intrest in software development, primarily
 				focused on backend technologies.

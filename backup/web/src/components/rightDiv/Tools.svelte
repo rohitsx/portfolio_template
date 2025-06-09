@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DynamicScroll from "./DynamicScroll.svelte";
-	import type { Items } from "$lib/types/DynamicScrolltype";
+	import type { Items } from "$lib/types/DynamicScroll.type";
 
 	const products: Items[] = [
 		{
