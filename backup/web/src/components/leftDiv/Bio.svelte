@@ -62,15 +62,15 @@
 			</p>
 		</div>
 
-		{#if languages}
-			<div class="bg-[#282828] p-4 h-80 rounded-r-lg md:rounded-sm md:block">
-				<h2 class="text-xl font-bold text-[#a9b665] mb-4">
-					Languages <span class="text-[#A7C9A7] text-xs italic"
-						>Powered by <a href="https://wakatime.com/">wakatime</a></span
-					>
-				</h2>
+		<div class="bg-[#282828] p-4 h-80 rounded-r-lg md:rounded-sm md:block">
+			<h2 class="text-xl font-bold text-[#a9b665] mb-4">
+				Languages <span class="text-[#A7C9A7] text-xs italic"
+					>Powered by <a href="https://wakatime.com/">wakatime</a></span
+				>
+			</h2>
+			{#if languages}
 				<div class="overflow-y-auto no-scrollbar space-y-1 h-61">
-					{#each languages.data as { name, percent, color }}
+					{#each languages.data as { name, percent }}
 						<div class="flex gap-3 items-center">
 							<h1 class="w-1/4">{name}</h1>
 							<div class="w-3/4 flex items-center gap-3">
@@ -84,8 +84,23 @@
 						</div>
 					{/each}
 				</div>
-			</div>
-		{/if}
+			{:else}
+				<div class="overflow-y-auto no-scrollbar space-y-3 h-61 animate-pulse">
+					{#each Array(16) as _}
+						<div class="flex gap-3 items-center">
+							<div class="w-1/4 h-4 bg-[#3a3a3a] rounded-sm"></div>
+							<div class="w-3/4 flex items-center gap-3">
+								<div
+									class="h-4 bg-[#3a3a3a] rounded-sm"
+									style="width: {Math.random() * 60 + 30}%"
+								></div>
+								<div class="w-10 h-4 bg-[#3a3a3a] rounded-sm"></div>
+							</div>
+						</div>
+					{/each}
+				</div>
+			{/if}
+		</div>
 
 		<!-- <div -->
 		<!-- 	class="bg-[#282828] p-4 rounded-r-lg md:rounded-sm hidden md:block" -->
