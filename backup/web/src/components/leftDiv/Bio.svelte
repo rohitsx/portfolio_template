@@ -73,12 +73,13 @@
 					{#each languages.data as { name, percent, color }}
 						<div class="flex gap-3 items-center">
 							<h1 class="w-1/4">{name}</h1>
-							<div class="w-3/4">
+							<div class="w-3/4 flex items-center gap-3">
 								<div
 									class="bg-amber-50 rounded-sm h-4"
 									style="width: {percent +
-										(90 - Number(languages.data[0].percent))}%									"
+										(90 - Number(languages.data[0].percent))}%"
 								></div>
+								<div class="text-[#A7C9A7] italic text-sm">{percent}%</div>
 							</div>
 						</div>
 					{/each}
