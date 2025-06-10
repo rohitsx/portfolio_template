@@ -37,7 +37,7 @@
 		<a
 			href="https://wakatime.com/@rohitsx"
 			target="_blank"
-			class="text-[#B8BB26] hover:underline md:hidden 2xl:block">Wakatime</a
+			class="text-[#B8BB26] hover:underline md:hidden">Wakatime</a
 		>
 		<a
 			href="https://github.com/rohitsx"
