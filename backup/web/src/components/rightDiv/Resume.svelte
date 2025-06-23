@@ -12,16 +12,16 @@
 	<div class="flex-grow">
 		<p class="text-xl text-amber-300 font-bold tracking-wider">Resume</p>
 		<a
-			href="https://docs.google.com/document/d/1j6KBYvxVcRZ79GQ9qP_KID6wdPgkyY3Y/edit?tab=t.0"
+			href="https://docs.google.com/document/d/1p1lM8qGFQbo8aEMi5lKIzpA1YzOJJNZKnpadHvKxsCc/edit?usp=sharing"
 			target="_blank"
 			class="text-sm text-gray-400 hover:text-amber-400 transition-colors duration-200 block mt-1"
 		>
-			Resume Link - updated MAY 25
+			Resume Link - updated Jul 25
 		</a>
 	</div>
 
 	<a
-		href="https://docs.google.com/document/d/1j6KBYvxVcRZ79GQ9qP_KID6wdPgkyY3Y/edit?tab=t.0"
+		href="https://docs.google.com/document/d/1p1lM8qGFQbo8aEMi5lKIzpA1YzOJJNZKnpadHvKxsCc/edit?usp=sharing"
 		target="_blank"
 		class="flex-shrink-0 bg-black text-amber-300 px-6 py-2 rounded-full border border-amber-500 hover:bg-amber-600 hover:text-black transition-all duration-300 transform hover:scale-105 text-sm uppercase tracking-widest shadow-md"
 	>
