@@ -30,9 +30,9 @@
 			>rohitbindw@gmail.com</a
 		>
 		<a
-			href="https://www.linkedin.com/in/rohitsx"
+			href="https://www.youtube.com/@water-98"
 			target="_blank"
-			class="text-[#B8BB26] hover:underline">LinkedIn</a
+			class="text-[#B8BB26] hover:underline">YouTube</a
 		>
 		<a
 			href="https://wakatime.com/@rohitsx"
