@@ -17,15 +17,19 @@
 
 		{
 			id: "36hbYPvvbVQ",
-			description: "StreamSync Demo Youtube video",
+			name: "StreamSync Demo",
+			description: "StreamSync Youtube Demo video",
 			imageUrl: "https://img.youtube.com/vi/36hbYPvvbVQ/0.jpg",
 			buttonUrl: "https://www.youtube.com/watch?v=36hbYPvvbVQ",
 		},
 
 		{
 			id: "ruUl1iP9fH8",
-			description: "JobFiteResume Demo Youtube Video",
-			imageUrl: "https://img.youtube.com/vi/ruUl1iP9fH8/0.jpg",
+			name: "JobFit Resume",
+			description:
+				"Tailor your resume to the job description. (Youtube Demo Video)",
+			imageUrl:
+				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748168053/2025-05-25_15-38_1_ejpoyj.png",
 			buttonUrl: "https://www.youtube.com/watch?v=ruUl1iP9fH8",
 		},
 	];
