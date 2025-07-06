@@ -4,13 +4,6 @@
 
 	const videos: Items[] = [
 		{
-			id: "36hbYPvvbVQ",
-			description:
-				"StreamSync Demo | Integrate Audio Calls with YouTube Live Chat",
-			imageUrl: "https://img.youtube.com/vi/36hbYPvvbVQ/0.jpg",
-			buttonUrl: "https://www.youtube.com/watch?v=36hbYPvvbVQ",
-		},
-		{
 			id: "Lzt1Y1uFdLU",
 			description:
 				"stremSync Proof of Concept | Integrates voice with super chats",

@@ -5,15 +5,6 @@
 	const products: Items[] = [
 		{
 			id: 1,
-			name: "JobFitResume",
-			description: "Tailor your resume to the job description.",
-			buttonText: "Tailor Resume",
-			imageUrl:
-				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748168053/2025-05-25_15-38_1_ejpoyj.png",
-			buttonUrl: "https://jobfitresume.vercel.app",
-		},
-		{
-			id: 2,
 			name: "StreamSync",
 			description:
 				"Voice to Super Chats for direct creator-audience interaction.",
@@ -25,15 +16,19 @@
 		},
 
 		{
-			id: 3,
-			name: "JpgToPng",
-			description: "Convert JPG to PNG in seconds",
-			buttonText: "Try",
-			imageUrl:
-				"https://res.cloudinary.com/dsegnno0z/image/upload/v1748168053/2025-05-25_15-39_1_wg0tyb.png",
-			buttonUrl: "https://jpg-to-png-seven.vercel.app",
+			id: "36hbYPvvbVQ",
+			description: "StreamSync Demo Youtube video",
+			imageUrl: "https://img.youtube.com/vi/36hbYPvvbVQ/0.jpg",
+			buttonUrl: "https://www.youtube.com/watch?v=36hbYPvvbVQ",
+		},
+
+		{
+			id: "ruUl1iP9fH8",
+			description: "JobFiteResume Demo Youtube Video",
+			imageUrl: "https://img.youtube.com/vi/ruUl1iP9fH8/0.jpg",
+			buttonUrl: "https://www.youtube.com/watch?v=ruUl1iP9fH8",
 		},
 	];
 </script>
 
-<DynamicScroll items={products} title="Tools I Build" />
+<DynamicScroll items={products} title="Featured" />
