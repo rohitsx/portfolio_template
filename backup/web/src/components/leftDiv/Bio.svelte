@@ -56,10 +56,7 @@
 				<h1 class="text-4xl font-bold text-[#B8BB26]">Rohit</h1>
 				<p class="text-[#A7C9A7] italic">India</p>
 			</div>
-			<p>
-				final-year cs student with intrest in software development, primarily
-				focused on backend technologies.
-			</p>
+			<p>CS’25 graduate with an interest in software development</p>
 		</div>
 
 		<div class="bg-[#282828] p-4 h-80 rounded-r-lg md:rounded-sm md:block">
