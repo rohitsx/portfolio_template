@@ -3,20 +3,14 @@
 	import TechStack from "./tech-stack.svelte";
 	import type { LanguagesProp } from "$lib/types/WakaTime.type";
 
-	let codingActivity: any = null;
 	let languages: LanguagesProp | null = null;
 
 	onMount(async () => {
 		let lares = await fetch(
 			"https://wakatime.com/share/@rohitsx/8ddff605-587d-4c35-bf4a-d09b21d26194.json",
 		);
-		// let cares = await fetch(
-		// 	"https://wakatime.com/share/@rohitsx/31429488-010d-4ae1-90b4-403b1049b880.json",
-		// );
-
 		languages = await lares.json();
 		console.log(languages);
-		// codingActivity = await cares.json();
 	});
 
 	console.log(languages);

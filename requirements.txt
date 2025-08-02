@@ -1,5 +1,0 @@
-fastapi[standard]==0.112.0
-Uvicorn==0.34.2
-dotenv
-requests
-types-requests
