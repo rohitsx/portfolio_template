@@ -34,7 +34,7 @@ export const FeaturedVideos = () => {
                 className="h-100 rounded-xl"
               ></iframe>
 
-              <div className="absolute bottom-0 h-21 left-0 w-full bg-neutral-200 p-2 rounded-b-lg">
+              <div className="absolute bottom-0 h-21 left-0 w-full bg-neutral-50 border p-2 rounded-b-lg shadow-2xs">
                 <h3 className="font-medium ">{video.title}</h3>
                 <p className="text-xs">{video.description}</p>
               </div>

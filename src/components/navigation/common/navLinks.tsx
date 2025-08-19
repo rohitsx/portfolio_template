@@ -4,11 +4,11 @@ import {
   Home,
   LayoutDashboard,
   FolderKanban,
-  BookOpen,
   Info,
   NotebookPen,
   Mail,
-  ArrowRight
+  ArrowRight,
+  Handshake
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -20,10 +20,10 @@ export const NavLinks = () => {
     { title: "Home", icon: <Home size={20} />, href: "/" },
     { title: "Dashboard", icon: <LayoutDashboard size={20} />, href: "/dashboard" },
     { title: "Projects", icon: <FolderKanban size={20} />, href: "/projects" },
-    { title: "Learn", icon: <BookOpen size={20} />, href: "/learn" },
-    { title: "About", icon: <Info size={20} />, href: "/about" },
-    { title: "Guestbook", icon: <NotebookPen size={20} />, href: "/guestbook" },
-    { title: "Contact", icon: <Mail size={20} />, href: "/contact" },
+    // { title: "HireMe", icon: <Handshake size={20} />, href: "/Hireme" },
+    // { title: "About", icon: <Info size={20} />, href: "/about" },
+    // { title: "Guestbook", icon: <NotebookPen size={20} />, href: "/guestbook" },
+    // { title: "Contact", icon: <Mail size={20} />, href: "/contact" },
   ];
 
   return (
