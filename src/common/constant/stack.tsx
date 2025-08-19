@@ -1,0 +1,85 @@
+import type { JSX } from 'react';
+import { BsRobot } from 'react-icons/bs';
+import {
+  SiCss3,
+  SiExpress,
+  SiFirebase,
+  SiJavascript,
+  SiNextdotjs,
+  SiNginx,
+  SiNodedotjs,
+  SiPrisma,
+  SiReact,
+  SiSocketdotio,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+  SiSupabase,
+  SiPython,
+  SiFastapi,
+  SiWebrtc,
+  SiDeno,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiRedis,
+  SiDocker,
+  SiNeovim,
+  SiLinux,
+  SiGithubactions,
+  SiGit,
+  SiGooglecloud,
+  SiSvelte,
+} from 'react-icons/si';
+
+export type stacksProps = {
+  [key: string]: JSX.Element;
+};
+
+const iconSize = 20;
+
+export const STACKS: stacksProps = {
+  JavaScript: <SiJavascript size={iconSize} className="text-yellow-400" />,
+  TypeScript: <SiTypescript size={iconSize} className="text-blue-400" />,
+  'Next.js': <SiNextdotjs size={iconSize} />,
+  'React.js': <SiReact size={iconSize} className="text-sky-500" />,
+  TailwindCSS: <SiTailwindcss size={iconSize} className="text-cyan-300" />,
+  Vite: <SiVite size={iconSize} className="text-purple-500" />,
+  Prisma: <SiPrisma size={iconSize} className="text-emerald-500" />,
+  Firebase: <SiFirebase size={iconSize} className="text-yellow-500" />,
+  'Artificial Intelligence': (
+    <BsRobot size={iconSize} className="text-rose-500" />
+  ),
+  'Node.js': <SiNodedotjs size={iconSize} className="text-green-600" />,
+  Nginx: <SiNginx size={iconSize} className="text-green-500" />,
+  CSS: <SiCss3 size={iconSize} className="text-blue-300" />,
+  Express: <SiExpress size={iconSize} />,
+  Supabase: <SiSupabase size={iconSize} className="text-green-500" />,
+  Python: <SiPython size={iconSize} className="text-yellow-500" />,
+  FastAPI: <SiFastapi size={iconSize} className="text-teal-500" />,
+  WebRTC: <SiWebrtc size={iconSize} className="text-green-400" />,
+  Deno: <SiDeno size={iconSize} className="text-black" />,
+  SQL: <SiPostgresql size={iconSize} className="text-blue-500" />,
+  NoSQL: <SiMongodb size={iconSize} className="text-green-500" />,
+  MySQL: <SiMysql size={iconSize} className="text-blue-400" />,
+  WebSockets: <SiSocketdotio size={iconSize} />,
+  'Agentic AI': <BsRobot size={iconSize} className="text-indigo-500" />,
+  'Generative AI': <BsRobot size={iconSize} className="text-pink-500" />,
+  FFmpeg: <SiJavascript size={iconSize} className="text-gray-500" />,
+  Redis: <SiRedis size={iconSize} className="text-red-500" />,
+  Zustand: <SiReact size={iconSize} className="text-lime-500" />,
+  Docker: <SiDocker size={iconSize} className="text-blue-500" />,
+  Neovim: <SiNeovim size={iconSize} className="text-green-500" />,
+  Linux: <SiLinux size={iconSize} className="text-yellow-500" />,
+  'GitHub Actions': <SiGithubactions size={iconSize} className="text-blue-500" />,
+  Git: <SiGit size={iconSize} className="text-red-500" />,
+  'CI/CD': <SiGithubactions size={iconSize} className="text-purple-500" />,
+  'Google APIs': <SiGooglecloud size={iconSize} className="text-blue-400" />,
+  'Web Hooks': <SiJavascript size={iconSize} className="text-orange-500" />,
+  'REST API': <SiExpress size={iconSize} />,
+  MongoDB: <SiMongodb size={iconSize} className="text-green-600" />,
+  Svelte: <SiSvelte size={iconSize} className="text-orange-500" />,
+  'ORM Tool': <SiPrisma size={iconSize} className="text-gray-400" />,
+  'Drizzle ORM': <SiJavascript size={iconSize} className="text-emerald-400" />,
+};
+
