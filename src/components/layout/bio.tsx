@@ -8,7 +8,6 @@ export const Bio = () => {
       </ul>
     </div>
     <p className="tracking-wide">
-      Seasoned Software Engineer especially in Frontend side, with a passion for creating pixel-perfect web experiences. I work with JavaScript and specialize in all-things web. I thrive on collaborating with teams to deliver efficient, scalable, and visually appealing web applications.
-    </p>
+      Full-stack Software Engineer with experience across frontend and backend development. I also have expertise in DevOps, generative AI, and agentic AI. I work with JavaScript, TypeScript, and Python, specializing in web technologies.</p>
   </div>
 }
