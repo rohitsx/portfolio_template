@@ -23,7 +23,7 @@ export const NavLinks = () => {
     // { title: "HireMe", icon: <Handshake size={20} />, href: "/Hireme" },
     // { title: "About", icon: <Info size={20} />, href: "/about" },
     // { title: "Guestbook", icon: <NotebookPen size={20} />, href: "/guestbook" },
-    // { title: "Contact", icon: <Mail size={20} />, href: "/contact" },
+    { title: "Contact", icon: <Mail size={20} />, href: "/contact" },
   ];
 
   return (
