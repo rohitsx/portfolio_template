@@ -3,7 +3,7 @@ import { Calendar, Clock5, Video } from "lucide-react"
 import Link from "next/link"
 
 export const BookCall = () => {
-  return <Container title="Book a Call">
+  return <Container title="Book a Call" className="mb-30">
     <div className="border border-neutral-200 bg-white rounded-2xl p-5 text-neutral-800 
                 transition-transform duration-300 hover:scale-101">
       <Link href="https://cal.com/rohit-bind-kuwqdq/30min" target="_blank">
