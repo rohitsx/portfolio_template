@@ -6,7 +6,7 @@ export const BookCall = () => {
   return <Container title="Book a Call" className="mb-30">
     <div className="border border-neutral-200 bg-white rounded-2xl p-5 text-neutral-800 
                 transition-transform duration-300 hover:scale-101">
-      <Link href="https://cal.com/rohit-bind-kuwqdq/30min" target="_blank">
+      <Link href="https://cal.com/rohit0" target="_blank">
         <div className="flex items-start justify-between">
           <div className="space-y-4 text-sm md:text-base">
             <div>
@@ -16,7 +16,7 @@ export const BookCall = () => {
             <div className="flex gap-4 justify-start">
               <div className="flex items-center gap-2">
                 <Clock5 className="size-5" />
-                <p>30 Minutes</p>
+                <p>15 or 30 Min</p>
               </div>
               <div className="flex items-center gap-2">
                 <Video className="size-5" />
