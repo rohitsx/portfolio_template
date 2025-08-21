@@ -3,7 +3,7 @@ export const Bio = () => {
     <div className="space-y-2">
       <h1 className="text-2xl text-neutral-800 md:text-3xl font-medium ">Hi, I'm Rohit 👋</h1>
       <ul className="md:flex md:gap-12 list-disc pl-5">
-        <li>Based in Chhattisgarh, India 🇮🇳</li>
+        <li>Based in India 🇮🇳</li>
         <li>Working remotely</li>
       </ul>
     </div>
