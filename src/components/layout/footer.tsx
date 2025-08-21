@@ -4,7 +4,7 @@ import { Rocket } from "lucide-react";
 import Link from "next/link";
 
 export const Footer = () => {
-  return <Container title="What I've been working on">
+  return <><Container title="What I've been working on">
     <p>
       I assist brands, companies, institutions, and startups in creating exceptional digital experiences for their businesses through strategic development services.
     </p>
@@ -17,4 +17,9 @@ export const Footer = () => {
     </div>
   </Container>
 
+    <p>
+      Thanks <Link href="https://x.com/aulianzaa" target="_blank" className="underline cursor-pointer">aulianza</Link> for this wonderful UI design.
+    </p>
+
+  </>
 }

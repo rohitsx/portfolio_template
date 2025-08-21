@@ -21,7 +21,7 @@ export const NavLinks = () => {
     { title: "Dashboard", icon: <LayoutDashboard size={20} />, href: "/dashboard" },
     { title: "Projects", icon: <FolderKanban size={20} />, href: "/projects" },
     // { title: "HireMe", icon: <Handshake size={20} />, href: "/Hireme" },
-    // { title: "About", icon: <Info size={20} />, href: "/about" },
+    { title: "About", icon: <Info size={20} />, href: "/about" },
     // { title: "Guestbook", icon: <NotebookPen size={20} />, href: "/guestbook" },
     { title: "Contact", icon: <Mail size={20} />, href: "/contact" },
   ];
