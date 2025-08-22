@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import { onestSans } from "@/common/styles/fonts";
 import "@/common/styles/globals.css"
@@ -37,12 +38,13 @@ export default async function RootLayout({
             <div className="w-full flex-col md:flex-row gap-8 max-w-[930px]">
               <NavBar />
               <div className="px-2 md:py-2 md:px-6 lg:px-11 space-y-7 md:space-y-5 text-base/[1.78rem] md:text-base/8 text-neutral-800 ">
-              {children}
+                {children}
               </div>
             </div>
           </div>
         </div>
         <GoogleAnalytics gaId="G-GG73LKQ79Q" />
+        <GoogleTagManager gtmId="GTM-TLMH6TCQ" />
       </body>
     </html>
   );
