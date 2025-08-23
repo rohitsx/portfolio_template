@@ -32,7 +32,7 @@ export const AboutOptions = () => {
         <OptionBtn icon={<Briefcase size={16} />} title="Career" />
         <OptionBtn icon={<GraduationCap size={16} />} title="Education" />
       </div>
-      <div className="h-full border border-neutral-200 border-t-0 p-4 md:p-8">
+      <div className="min-h-[650px] border border-neutral-200 border-t-0 p-4 md:p-8">
         {aboutOption === "Intro" && <Intro />}
         {aboutOption === "Resume" && <Resume />}
         {aboutOption === "Career" && <Career />}
