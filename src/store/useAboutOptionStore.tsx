@@ -8,7 +8,7 @@ type Store = {
 }
 
 export const useAboutOption = create<Store>()((set) => ({
-  aboutOption: "Intro",
+  aboutOption: "Resume",
   setAboutOption: (v: SetAboutProps) => set(state => (
     { aboutOption: v }
   ))

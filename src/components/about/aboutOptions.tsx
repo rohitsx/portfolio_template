@@ -25,7 +25,8 @@ export const AboutOptions = () => {
   }
 
   return (
-    <div className="h-[800px] flex flex-col">      <div className="flex flex-col md:flex-row gap-2">
+    <div className="h-full flex flex-col">
+      <div className="flex flex-col md:flex-row gap-2">
         <OptionBtn icon={<Bookmark size={16} />} title="Intro" />
         <OptionBtn icon={<FileText size={16} />} title="Resume" />
         <OptionBtn icon={<Briefcase size={16} />} title="Career" />
