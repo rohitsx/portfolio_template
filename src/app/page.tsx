@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/footer";
 import { Skills } from "@/components/layout/skills";
 
 export default function Home() {
+
   return (
     <>
       <Bio />
@@ -11,5 +12,5 @@ export default function Home() {
       <Skills />
       <Footer />
     </>
-  );
+  )
 }
