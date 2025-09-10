@@ -12,12 +12,9 @@ export const Resume = () => {
       <Maximize2 className="w-4 h-4" />
       View Full Screen
     </Link>
-
-    <div className="h-[800px] px-4 overflow-y-auto custom-scrollbar">
-      <iframe
-        className="w-full h-[1370px]"
-        src="https://docs.google.com/document/d/e/2PACX-1vSJUigr1CQpYj5VoJ330Nafz5blrPrCM5taCypzjtU_CA7x-efdEfJAQQUhFL1G4dRIQbit5ocVnamT/pub?embedded=true"
-      />
-    </div>
+    <iframe
+      className="w-full h-180"
+      src="https://docs.google.com/document/d/e/2PACX-1vSJUigr1CQpYj5VoJ330Nafz5blrPrCM5taCypzjtU_CA7x-efdEfJAQQUhFL1G4dRIQbit5ocVnamT/pub?embedded=true"
+    />
   </div>
 }
