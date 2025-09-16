@@ -1,13 +1,19 @@
+import { CallToAction } from "@/components/hire-me/CallToAction";
+import { ClientWork } from "@/components/hire-me/ClientWork";
+import { Testimonials } from "@/components/hire-me/Testimonials";
+
 export default function HireMe() {
   return (
     <>
       <section className="space-y-1 border-b border-dashed pb-6 md:pb-5 border-neutral-800">
         <h1 className="text-2xl text-neutral-800 font-medium ">Hire Me</h1>
         <p className="text-neutral-600">
-          Interested in collaborating or have a project in mind? Let's connect and discuss how I can help bring your ideas to life.
+          A showcase of my professional collaborations, successful projects, and client feedback. Interested in working together? Let's connect.
         </p>
       </section>
-      {/* You can add more components or content here later */}
+      <Testimonials />
+      <ClientWork />
+      <CallToAction />
     </>
   );
 }

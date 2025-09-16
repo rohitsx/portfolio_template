@@ -1,3 +1,4 @@
+import { TestimonialsHomeRoute } from "@/components/hire-me/Testimonials";
 import { Bio } from "@/components/layout/bio";
 import { FeaturedVideos } from "@/components/layout/featuredVideos";
 import { Footer } from "@/components/layout/footer";
@@ -10,6 +11,7 @@ export default function Home() {
       <Bio />
       <FeaturedVideos />
       <Skills />
+      <TestimonialsHomeRoute/>
       <Footer />
     </>
   )

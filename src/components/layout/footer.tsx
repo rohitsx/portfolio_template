@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Footer = () => {
   return <><Container title="What I've been working on">
     <p>
-      I assist brands, companies, institutions, and startups in creating exceptional digital experiences for their businesses through strategic development services.
+    I specialize in turning complex challenges into high-performance web applications. Whether it's building a system from the ground up, implementing real-time features, or integrating AI-powered solutions, I deliver robust, scalable, and well-documented code that helps businesses achieve their goals.
     </p>
     <div className="p-8 border rounded-2xl w-full space-y-4">
       <SectionHeading title="Lets work together!" icon={<Rocket />} />

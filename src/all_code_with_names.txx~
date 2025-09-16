@@ -1,0 +1,274 @@
+// src/app/hire-me/page.tsx
+
+import Link from "next/link";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaReddit,
+  FaMoneyBillWave,
+} from "react-icons/fa";
+import {
+  ArrowUpRight,
+  CheckCircle,
+  Quote,
+  Briefcase,
+  Mail,
+  FileText,
+} from "lucide-react";
+import Image from "next/image";
+import { Container } from "@/common/component/elements/container";
+
+// --- Data for the Hire Me Page ---
+// In a real project, this would likely be in a separate file like `common/constant/hireMeData.ts`
+
+const testimonials = [
+  {
+    name: "Anthony Rosales Laguan",
+    title: "Senior Javascript Engineer, Able AI",
+    source: "LinkedIn",
+    icon: <FaLinkedin className="h-5 w-5 text-[#0077B5]" />,
+    text: "I had the pleasure of collaborating with Rohit on several urgent tasks. He demonstrated strong problem-solving skills, asked thoughtful and precise questions, and consistently showed professionalism and respect in his interactions. Rohit quickly adapted to team workflows, followed instructions diligently, and delivered results under pressure. I confidently recommend him as a reliable and collaborative professional who adds value to any engineering team.",
+  },
+  {
+    name: "u/hastogord1",
+    title: "Platform Owner",
+    source: "Reddit",
+    icon: <FaReddit className="h-5 w-5 text-[#FF4500]" />,
+    text: "Yes that showed the issue finally. You are a good one. Just announce everywhere and speak as many people possible helping like this. I am glad we could finally handle this issue. I really appreciate and hope the best. You can also use our platform more if you want to.",
+  },
+];
+
+const contributions = [
+  {
+    company: "Foxy Apps",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYtcj5ijN1KbPc5xv7pudZSHUfFYrd2ot9WA&s",
+    description: "As a freelance Full Stack Engineer, I tackled critical bugs, built new features from the ground up, and modernized core functionalities for this no-code AI-tool builder.",
+    tasks: [
+      {
+        title: "Advanced Editor State & Simple Builder Input Fixes",
+        description:
+          "Resolved critical state management bugs where the Advanced Editor retained 'ghost state' across templates and the Simple Builder ignored user inputs, ensuring a stable and predictable user experience.",
+        details: [
+          "Fixed stale state in Advanced Editor, preventing element carryover between templates.",
+          "Ensured Simple Builder correctly processes and reflects user inputs in the generated tool.",
+          "Corrected a 404 error on the /templates page.",
+          "Addressed Next.js build errors related to client component hooks (useRouter, etc.).",
+        ],
+      },
+      {
+        title: "Blog & CMS with Zapier Automation",
+        description:
+          "Built a full-stack blog platform with a CMS in the admin panel and a Zapier webhook for automated, AI-driven content posting.",
+        details: [
+          "Created admin UI for blog post CRUD operations (Title, Slug, Content, Scheduling).",
+          "Developed a secure API endpoint for Zapier integration to auto-post articles.",
+          "Fixed production bugs related to the API route configuration.",
+          "Ensured the Table of Contents is auto-generated from H1 tags.",
+        ],
+      },
+      {
+        title: "Auth System Upgrade: Magic Link & Unified Accounts",
+        description:
+          'Modernized the authentication system by implementing a password-free "Magic Link" sign-in via the Resend API and unifying user accounts.',
+        details: [
+          "Engineered the magic link flow, from email entry to authenticated session.",
+          "Resolved issues where users signing up with Gmail were treated differently from email sign-ups, enabling password resets for all.",
+        ],
+      },
+      {
+        title: "AI Builder Functional Upgrades",
+        description:
+          "Enhanced the AI tool builder with auto-saving, improved status displays, and AI-powered assistance features to streamline the creation process.",
+        details: [
+          "Implemented auto-save functionality triggered on field blur and debounce.",
+          "Added clear app status indicators (Published, Unpublished, Unpublished Changes).",
+          "Integrated individual AI 'magic wand' buttons for fields like Title and Description.",
+          "Developed logic for AI to suggest categories based on app content.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Able AI",
+    logo: "https://static.thenounproject.com/png/2616533-200.png",
+    description: "Contributed key features to a gig platform, focusing on backend logic, database schema design, and frontend implementation to enhance user interaction and platform capabilities.",
+    tasks: [
+      {
+        title: "feat: Add buyer gig amendment flow and refactor shared components",
+        link: "https://github.com/AbleAI2025/able-ai/pull/128",
+      },
+      {
+        title: "feat: implement gig amendment flow with amendId, schema, and UI updates",
+        link: "https://github.com/AbleAI2025/able-ai/pull/108",
+      },
+      {
+        title: "feat(onboarding): Implement referral code capture and application",
+        link: "https://github.com/AbleAI2025/able-ai/pull/83",
+      },
+      {
+        title: "feat: initial referral discount code functionality (partial)",
+        link: "https://github.com/AbleAI2025/able-ai/pull/78",
+      },
+      {
+        title: "Feature/external recommendation form",
+        link: "https://github.com/AbleAI2025/able-ai/pull/66",
+      },
+    ],
+  },
+];
+
+
+// --- Sub-Components ---
+
+function TestimonialsSection() {
+  return (
+    <Container title="Testimonials" icon={<Quote />}>
+      <p>
+        I'm proud to have collaborated with some awesome people. Here's what
+        they have to say.
+      </p>
+      <div className="grid md:grid-cols-2 gap-4">
+        {testimonials.map((testimonial) => (
+          <div
+            key={testimonial.name}
+            className="flex flex-col justify-between border border-neutral-200 shadow-2xs rounded-xl p-5 space-y-5"
+          >
+            <p className="text-neutral-700 italic">"{testimonial.text}"</p>
+            <div className="flex items-center gap-3 pt-4 border-t border-dashed">
+              <div className="flex-shrink-0 size-10 bg-neutral-200 rounded-full flex items-center justify-center font-bold text-neutral-500">
+                {testimonial.name.charAt(0)}
+              </div>
+              <div>
+                <div className="font-medium text-neutral-800 flex items-center gap-2">
+                  {testimonial.name}
+                </div>
+                <div className="text-sm text-neutral-500 flex items-center gap-1.5">
+                  {testimonial.icon}
+                  {testimonial.title}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  );
+}
+
+function ContributionsSection() {
+  return (
+    <Container
+      title="Recent Work & Key Contributions"
+      icon={<Briefcase />}
+      className="space-y-12"
+    >
+      {contributions.map((project) => (
+        <div key={project.company} className="flex flex-col md:flex-row gap-6">
+          <div className="md:w-1/4 space-y-2">
+            <Image
+              src={project.logo}
+              alt={`${project.company} logo`}
+              width={40}
+              height={40}
+              className="rounded-full bg-neutral-100 p-1 border"
+            />
+            <h3 className="text-lg font-medium text-neutral-800">{project.company}</h3>
+            <p className="text-sm/relaxed">{project.description}</p>
+          </div>
+          <div className="md:w-3/4 space-y-4">
+            {project.tasks.map((task, index) => (
+              <div
+                key={index}
+                className="border border-neutral-200 rounded-lg p-4"
+              >
+                {task.link ? (
+                  // PR Style for Able AI
+                  <Link
+                    href={task.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center justify-between text-neutral-700 hover:text-neutral-900"
+                  >
+                    <div className="flex items-center gap-3">
+                      <FaGithub className="size-4" />
+                      <span className="group-hover:underline">{task.title}</span>
+                    </div>
+                    <ArrowUpRight className="size-4 text-neutral-400 group-hover:text-neutral-600" />
+                  </Link>
+                ) : (
+                  // Task Style for Foxy Apps
+                  <div className="space-y-3">
+                    <h4 className="font-medium text-neutral-800">
+                      {task.title}
+                    </h4>
+                    <p className="text-sm/relaxed">{task.description}</p>
+                    {task.details && (
+                      <ul className="space-y-2 pt-2">
+                        {task.details.map((detail, i) => (
+                          <li key={i} className="flex items-start gap-2 text-sm">
+                            <CheckCircle className="size-4 mt-0.5 flex-shrink-0 text-green-500" />
+                            <span>{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </Container>
+  );
+}
+
+function CallToActionSection() {
+  return (
+    <Container title="Let's Build Together" icon={<Mail />} id="contact">
+      <p>
+        I'm currently available for freelance projects and open to discussing new opportunities. If you have a project in mind or just want to connect, feel free to reach out.
+      </p>
+      <div className="flex flex-col md:flex-row gap-4 pt-4">
+        <Link
+          href="/contact"
+          className="w-full md:w-auto flex items-center justify-center gap-2 bg-neutral-800 text-white font-medium py-2 px-6 rounded-lg hover:bg-neutral-700 transition-colors"
+        >
+          Contact Me
+        </Link>
+        <a
+          href="https://wise.com/pay/me/rohitb92"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full md:w-auto flex items-center justify-center gap-2 bg-green-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-green-600 transition-colors"
+        >
+          <FaMoneyBillWave />
+          Send a Payment via Wise
+        </a>
+      </div>
+    </Container>
+  );
+}
+
+
+// --- Main Page Component ---
+
+export default function HireMe() {
+  return (
+    <>
+      <section className="space-y-1 border-b border-dashed pb-6 md:pb-5 border-neutral-800">
+        <h1 className="text-2xl text-neutral-800 font-medium">Hire Me</h1>
+        <p className="text-neutral-600">
+          Interested in collaborating or have a project in mind? Let's connect
+          and discuss how I can help bring your ideas to life.
+        </p>
+      </section>
+
+      <TestimonialsSection />
+
+      <ContributionsSection />
+
+      <CallToActionSection />
+    </>
+  );
+}
