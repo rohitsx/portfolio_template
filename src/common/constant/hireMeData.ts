@@ -59,20 +59,54 @@ export const testimonialsData = [
       url: "https://www.linkedin.com/in/rohitsx/",
     },
   },
-  {
-    quote:
-      "Yes, that showed the issue finally.\nYou are a good one.\nI am glad we could finally handle this issue.\n I really appreciate and hope the best.",
-    author: "hastogord1",
-    title: "Founder Letit.net",
-    source: {
-      name: "Reddit",
-      icon: MessageSquare,
-      url: "https://www.letit.net"
-    },
-  },
+  // {
+  //   quote:
+  //     "Yes, that showed the issue finally.\nYou are a good one.\nI am glad we could finally handle this issue.\n I really appreciate and hope the best.",
+  //   author: "hastogord1",
+  //   title: "Founder Letit.net",
+  //   source: {
+  //     name: "Reddit",
+  //     icon: MessageSquare,
+  //     url: "https://www.letit.net"
+  //   },
+  // },
 ] as const satisfies readonly Testimonial[];
 
 export const clientsData = [
+  {
+    "name": "Foxy Apps",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYtcj5ijN1KbPc5xv7pudZSHUfFYrd2ot9WA&s",
+    "role": "Freelance Full Stack Engineer",
+    "link": "https://www.foxyapps.com/",
+    "summary":
+      "Enhanced a no-code AI tool-building platform by resolving critical stability issues, developing a full-stack content management system, and modernizing core user-facing features to improve functionality and user experience.",
+    "contributions": [
+      {
+        "description": "Resolved a critical state management bug in the core application builder by implementing robust state isolation, preventing data leakage between components and ensuring a stable app-building experience for users.",
+        "link": "https://www.foxyapps.com/builder"
+      },
+      {
+        "description": "Developed a full-stack blog and CMS from scratch using Next.js and Supabase, including a secure Zapier webhook for automated, AI-driven content publishing.",
+        "link": "https://www.foxyapps.com/blog"
+      },
+      {
+        "description": "Modernized the authentication system by implementing a passwordless 'Magic Link' sign-in feature with the Resend API, which streamlined the user login process and unified disparate account types.",
+        "link": "https://www.foxyapps.com/signin"
+      },
+      {
+        "description": "Led a complete overhaul of the AI tool builder, implementing a new UI/UX, a robust draft & publishing system with auto-save, and new AI-powered features like per-field assistance, category suggestions, and an AI icon generator.",
+        "link": "https://www.foxyapps.com/builder"
+      },
+      {
+        "description": "Architected and built a secure, database-driven admin panel from scratch, replacing hardcoded logic with a robust magic link authentication system and a full CRUD interface for managing admin users and platform-wide AI model configurations.",
+        "link": "https://www.foxyapps.com/admin"
+      },
+      {
+        "description": "Integrated real-time Slack notifications for key business events, alerting the team to user churn from subscription cancellations and failed payments to enable faster response times.",
+        "link": "https://www.foxyapps.com/"
+      }
+    ]
+  },
   {
     name: "Able AI",
     logo: "https://static.thenounproject.com/png/2616533-200.png",
@@ -99,30 +133,6 @@ export const clientsData = [
       { title: "feat: implement gig amendment flow with amendId, schema, and UI updates", url: "https://github.com/AbleAI2025/able-ai/pull/108" },
       { title: "feat(onboarding): Implement referral code capture and application", url: "https://github.com/AbleAI2025/able-ai/pull/83" },
       { title: "Feature/external recommendation form", url: "https://github.com/AbleAI2025/able-ai/pull/66" },
-    ],
-  },
-  {
-    name: "Foxy Apps",
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYtcj5ijN1KbPc5xv7pudZSHUfFYrd2ot9WA&s",
-    role: "Freelance Full Stack Engineer",
-    link: "https://www.foxyapps.com/",
-    summary:
-      "Enhanced a no-code AI tool-building platform by resolving critical stability issues, developing a full-stack content management system, and modernizing core user-facing features to improve functionality and user experience.",
-    contributions: [
-      {
-        description: "Resolved a critical state management bug in the core application builder by implementing robust state isolation, preventing data leakage between components and ensuring a stable app-building experience for users.", link: "https://www.foxyapps.com/builder"
-      },
-      {
-        description: "Developed a full-stack blog and CMS from scratch using Next.js and Supabase, including a secure Zapier webhook for automated, AI-driven content publishing.", link: "https://www.foxyapps.com/blog"
-      },
-      {
-        description: "Modernized the authentication system by implementing a passwordless 'Magic Link' sign-in feature with the Resend API, which streamlined the user login process and unified disparate account types.",
-        link: "https://www.foxyapps.com/signin",
-      },
-      {
-        description: "Shipped numerous UI/UX enhancements, including an auto-save-to-draft feature, dynamic app status indicators, and AI-powered assistance for form fields within the tool builder.",
-        link: "https://www.foxyapps.com/builder"
-      }
     ],
   },
   {

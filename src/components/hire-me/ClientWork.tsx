@@ -17,7 +17,7 @@ interface ClientWorkCardProps {
 }
 
 const ClientWorkCard = ({ logo, name, role, link, summary, contributions, prs }: ClientWorkCardProps) => {
-  const [showDetails, setShowDetails] = useState(true);
+  const [showDetails, setShowDetails] = useState(false);
 
   return (
     <div className="border rounded-lg p-4 w-full bg-white shadow-sm">
