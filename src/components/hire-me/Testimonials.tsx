@@ -5,7 +5,6 @@ import SectionHeading from "@/common/component/elements/sectionHeading";
 import { Testimonial, testimonialsData } from "@/common/constant/hireMeData";
 import { ArrowRight, Quote } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   const IconComponent = testimonial.source.icon;

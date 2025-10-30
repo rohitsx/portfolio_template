@@ -21,11 +21,26 @@ export const CallToAction = () => {
                     Make a Payment
                 </h3>
                 <p className="text-sm text-neutral-600">
-                    If we've already agreed on a project, you can make a secure payment directly through Wise.
+                    If we've already agreed on a project, you can make a secure payment directly.
                 </p>
-                <Link href="https://wise.com/pay/business/rohitbind" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white text-sm font-medium py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">
-                    Pay with Wise
-                </Link>
+                <div className="flex justify-between gap-3">
+                    <Link 
+                        href="https://wise.com/pay/business/rohitbind" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex justify-center items-center w-full bg-green-500 text-white text-sm font-medium py-2 px-4 rounded-lg hover:bg-green-600 transition-colors"
+                    >
+                        Wise
+                    </Link>
+                    <Link 
+                        href="https://paypal.me/RohitB781?locale.x=en_GB&country.x=IN" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex justify-center items-center w-full bg-blue-600 text-white text-sm font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+                    >
+                        PayPal
+                    </Link>
+                </div>
             </div>
         </div>
     </Container>
