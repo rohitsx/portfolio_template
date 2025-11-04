@@ -46,7 +46,7 @@ export const SocialLinks = () => {
         <SocialContainer
           icon={<FaEnvelope className={commonIconClass} />}
           title="Email"
-          href="mailto:rohitbinw@gmail.com"
+          href="mailto:rohitbindw@gmail.com"
           className="bg-emerald-600 hover:bg-emerald-500 border-transparent"
         />
         <SocialContainer
