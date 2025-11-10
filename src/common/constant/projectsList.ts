@@ -40,26 +40,36 @@ export const projectsList = [
     ],
   },
   {
-    title: "Repli AI",
-    description:
-      "A tool that automatically labels emails, generates summaries, and drafts email replies using AI. (unfinished)",
-    link: "https://repli0.vercel.app/",
-    github: "https://github.com/rohitsx/repli",
-    youtube: "https://www.youtube.com/watch?v=GAppsFFlnmM",
-    image:
-      "https://res.cloudinary.com/dsegnno0z/image/upload/v1755594393/e053da11-9a6c-48ba-9a8c-49ac12cc8ab0.png",
+    title: "Pic0",
+    description: "Pic0 is an AI photo editor that transforms your images with simple text prompts for quick, seamless results.",
+    link: "https://www.pic0.in/",
+    youtube: "https://www.youtube.com/watch?v=Weq_XcdFCeg",
+    image: "https://img.youtube.com/vi/Weq_XcdFCeg/0.jpg",
     stacks: [
-      "TypeScript",
+      "Expo",
+      "React Native",
+      "React",
       "Next.js",
+      "TypeScript",
+      "JavaScript",
       "Zustand",
       "Supabase",
-      "Gmail API",
-      "Webhook",
-      "shadcn/ui",
-      "Drizzle ORM",
-      "Better Auth",
-      "DodoPayments",
-    ],
+      "Google Generative AI",
+      "Express.js",
+      "Tailwind CSS",
+      "Google Auth",
+      "RevenueCat",
+      "Webhook"
+    ]
+  },
+  {
+    title: "Omegle Clone",
+    description:
+      "Real-time video chat app inspired by Omegle with live video calls and text chats.",
+    github: "https://github.com/rohitsx/omegleClone",
+    youtube: "https://www.youtube.com/watch?v=YTGfyUdhu-U",
+    image: "https://img.youtube.com/vi/YTGfyUdhu-U/0.jpg",
+    stacks: ["React", "Socket.IO", "WebRTC", "Express.js", "Redis"],
   },
   {
     title: "SquadX",
@@ -98,6 +108,28 @@ export const projectsList = [
     ],
   },
   {
+    title: "Repli AI",
+    description:
+      "A tool that automatically labels emails, generates summaries, and drafts email replies using AI. (unfinished)",
+    link: "https://repli0.vercel.app/",
+    github: "https://github.com/rohitsx/repli",
+    youtube: "https://www.youtube.com/watch?v=GAppsFFlnmM",
+    image:
+      "https://res.cloudinary.com/dsegnno0z/image/upload/v1755594393/e053da11-9a6c-48ba-9a8c-49ac12cc8ab0.png",
+    stacks: [
+      "TypeScript",
+      "Next.js",
+      "Zustand",
+      "Supabase",
+      "Gmail API",
+      "Webhook",
+      "shadcn/ui",
+      "Drizzle ORM",
+      "Better Auth",
+      "DodoPayments",
+    ],
+  },
+  {
     title: "callRoom",
     description:
       "Lightweight peer-to-peer video calling app built with PHP, WebRTC, WebSockets, and MySQL.",
@@ -113,15 +145,6 @@ export const projectsList = [
       "MySQL",
       "Docker",
     ],
-  },
-  {
-    title: "Omegle Clone",
-    description:
-      "Real-time video chat app inspired by Omegle with live video calls and text chats.",
-    github: "https://github.com/rohitsx/omegleClone",
-    youtube: "https://www.youtube.com/watch?v=YTGfyUdhu-U",
-    image: "https://img.youtube.com/vi/YTGfyUdhu-U/0.jpg",
-    stacks: ["React", "Socket.IO", "WebRTC", "Express.js", "Redis"],
   },
   {
     title: "aiMovieChatbot",

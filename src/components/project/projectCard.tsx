@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { STACKS } from "@/common/constant/stack";
@@ -27,9 +26,9 @@ export const ProjectCard = ({
   youtube,
 }: ProjectCardProps) => {
   return (
-    <div className="w-full h-full border border-neutral-200 shadow-2xs rounded-xl">
+    <div className="relative group w-full h-full border border-neutral-200 shadow-2xs rounded-xl">
       {/* Image + Overlay */}
-      <div className="relative group">
+      <div className="relative">
         <Image
           src={image}
           alt={title}
@@ -71,7 +70,6 @@ export const ProjectCard = ({
           )}
         </div>
       </div>
-
       {/* Content */}
       <div className="p-4 pb-8 space-y-6">
         <Link
@@ -85,12 +83,11 @@ export const ProjectCard = ({
         <p className="text-sm/relaxed text-neutral-700">
           {description}
         </p>
-
         <div className="flex items-center gap-3 flex-wrap">
           {stacks.map((stack) => (
-            <div key={stack} className="relative group flex items-center">
+            <div key={stack} className="relative group/stack flex items-center">
               {STACKS[stack]}
-              <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded-md bg-black text-white opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+              <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded-md bg-black text-white opacity-0 group-hover/stack:opacity-100 transition whitespace-nowrap pointer-events-none">
                 {stack}
               </span>
             </div>
@@ -100,4 +97,3 @@ export const ProjectCard = ({
     </div>
   );
 };
-
