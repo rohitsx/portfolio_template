@@ -6,6 +6,7 @@ export const careerData = [
     companyDetails: "Gig Platform",
     location: "South Africa 🇿🇦",
     startDate: "Aug 2025",
+    endDate: "Sep 2025",
     employmentType: "Freelance",
     responsibilities: [
       "Engineered an external recommendation feature, designing the Drizzle ORM schema and building the submission logic with Next.js Actions.",
@@ -22,6 +23,7 @@ export const careerData = [
     companyDetails: "No code AI-tool builder",
     location: "Romania 🇷🇴",
     startDate: "Jan 2025",
+    endDate: "Oct 2025",
     employmentType: "Freelance",
     responsibilities: [
       "Developed a full-stack Blog & CMS using Next.js and Supabase for content management and scheduling.",

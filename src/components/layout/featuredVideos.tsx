@@ -6,8 +6,8 @@ export const FeaturedVideos = () => {
   const videos = [
     { id: "36hbYPvvbVQ", title: "StreamSync", description: "Voice to Super Chats for direct creator-audience interaction." },
     { id: "ruUl1iP9fH8", title: "JobFit Resume", description: "Tailor your resume to the job description. (Youtube Demo Video)" },
-    { id: "Weq_XcdFCeg", title: "Pic0", description: "AI-powered photo editing app with simple text prompts" },
     { id: "YTGfyUdhu-U", title: "Omegle Clone", description: "Real-time video chat platform that connects strangers for random, spontaneous conversations." },
+    { id: "Weq_XcdFCeg", title: "Pic0", description: "AI-powered photo editing app with simple text prompts" },
     { id: "GAppsFFlnmM", title: "Repli AI", description: "Repli AI – WhatsApp AI Agent for Email (unfinished)" },
   ];
 
